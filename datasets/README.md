@@ -16,8 +16,28 @@ As imagens **não são publicadas neste repositório** (tamanho e licenças). Os
 `results/figures/anotacoes_train_desnivel.jpg`. Se a maior parte for buraco, troque o mapeamento em
 `configs/sources.yaml` e documente a decisão.
 
-Quantidades de imagens: as páginas do Roboflow não informam o total de todas as bases; os números reais
-obtidos ficam em `results/metrics/convert_report.json` depois do download e entram no relatório.
+### Números reais obtidos (download de 18/11/2026, `results/metrics/convert_report.json`)
+
+| Base | Imagens na base | Imagens aproveitadas | Caixas Rota Livre |
+|---|---|---|---|
+| Pothole (Chitholian) | 665 | 665 | 1.739 `buraco` |
+| Sidewalk Walkability | 50 | 50 | 52 `desnivel` · 18 `obstaculo` |
+| Sidewalk Obstacles (Blindspot) | 3.730 | 1.261 (só as que têm obstáculo mapeado) | 3.569 `obstaculo` |
+
+Divisão (`split_report.json`): treino 1.384 · validação 296 · teste 296 imagens; 0 grupos em mais de um split;
+5 quase-duplicatas uniram grupos. **`desnivel` tem só 35 instâncias no treino** (mínimo recomendado 150): por isso
+a anotação das fotos brasileiras do Mapillary é necessária.
+
+Inspeção visual (`results/figures/anotacoes_train_*.jpg`):
+- `buraco`: anotações consistentes, mas fotos de **rua** (domínio diferente de calçada).
+- `desnivel` (rótulo *broken*): calçadas reais com piso quebrado/ausente — compatível com "irregularidade"; mapeamento mantido.
+- `obstaculo`: ruidoso — inclui fotos de produto em fundo branco e postes no meio da via.
+
+### Bases sem versão publicada (Pothole e Sidewalk Obstacles)
+O Roboflow só permite baixar versões. Essas duas não têm nenhuma, então é preciso clicar em **Fork Dataset**
+na página do Universe (copia para o seu workspace). `download_data.py roboflow` detecta o fork na conta da chave,
+gera uma versão sem augmentation (só auto-orient) e baixa. Forks usados neste projeto:
+`lucass-workspace-shzef/pothole-kvso8-jwzbd` e `lucass-workspace-shzef/sidewalk-obstacles-7mfgc` (versão 1).
 
 ## Passo a passo
 1. Chave gratuita do Roboflow: app.roboflow.com → Settings → API Keys. No Colab, salve em *Secrets* como `ROBOFLOW_API_KEY`.
