@@ -57,6 +57,31 @@ def _unzip(path: Path, dst: Path):
         z.extractall(dst)
 
 
+def latest_version(project) -> int:
+    """Descobre a versão mais recente publicada de um projeto do Roboflow Universe."""
+    candidates = []
+    try:
+        for info in project.get_version_information():
+            candidates.append(int(str(info.get("id", "")).split("/")[-1]))
+    except Exception as e:
+        print(f"  (get_version_information falhou: {e})")
+    if not candidates:
+        try:
+            for v in project.versions():
+                candidates.append(int(str(getattr(v, "version", "")).split("/")[-1]))
+        except Exception as e:
+            print(f"  (versions falhou: {e})")
+    if candidates:
+        return max(candidates)
+    for n in range(30, 0, -1):  # último recurso: testa versões de 30 a 1
+        try:
+            project.version(n)
+            return n
+        except Exception:
+            continue
+    raise RuntimeError("Nenhuma versão publicada encontrada; informe com --version nome=N")
+
+
 def cmd_roboflow(args):
     key = args.api_key or os.environ.get("ROBOFLOW_API_KEY")
     if not key:
@@ -70,10 +95,7 @@ def cmd_roboflow(args):
         project = rf.workspace(ws).project(proj)
         version = args.version.get(name) if args.version else None
         if version is None:
-            try:
-                version = max(int(str(v.version).split("/")[-1]) for v in project.versions())
-            except Exception:
-                version = 1
+            version = latest_version(project)
         dst = RAW / name
         print(f"- {name}: {ws}/{proj} versão {version} -> {dst}")
         project.version(int(version)).download("yolov8", location=str(dst), overwrite=True)
