@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+import time
 import zipfile
 from pathlib import Path
 
@@ -88,15 +89,16 @@ def fork_version(rf, original_slug: str):
     matches = [p for p in own.projects() if p.split("/")[-1].startswith(original_slug)]
     if not matches:
         sys.exit(f"Faça o fork de {original_slug} no Roboflow Universe (botão 'Fork Dataset') e rode de novo.")
-    project = own.project(matches[0].split("/")[-1])
+    fork_ws, fork_proj = matches[0].split("/")[0], matches[0].split("/")[-1]
+    project = own.project(fork_proj)
     try:
-        return project, latest_version(project)
+        return project, latest_version(project), fork_ws, fork_proj
     except RuntimeError:
         pass
     print(f"  gerando versão de {matches[0]} (sem augmentation, só auto-orient) ...")
     settings = {"preprocessing": {"auto-orient": True}, "augmentation": {}}
     v = project.generate_version(settings)
-    return project, int(v)
+    return project, int(v), fork_ws, fork_proj
 
 
 def cmd_roboflow(args):
@@ -117,11 +119,18 @@ def cmd_roboflow(args):
             except RuntimeError:
                 # Base sem versão publicada: usa o fork na conta da equipe (Universe -> "Fork Dataset")
                 print(f"  {ws}/{proj} não tem versão publicada; procurando fork na sua conta ...")
-                project, version = fork_version(rf, proj)
-                ws, proj = project.workspace, project.id.split("/")[-1]
+                project, version, ws, proj = fork_version(rf, proj)
         dst = RAW / name
         print(f"- {name}: {ws}/{proj} versão {version} -> {dst}")
-        project.version(int(version)).download("yolov8", location=str(dst), overwrite=True)
+        for attempt in range(30):  # versão recém-gerada pode levar alguns minutos para ficar pronta
+            try:
+                project.version(int(version)).download("yolov8", location=str(dst), overwrite=True)
+                break
+            except Exception as e:
+                print(f"  versão ainda não pronta ({e.__class__.__name__}: {e}); tentando de novo em 20 s ...")
+                time.sleep(20)
+        else:
+            sys.exit(f"Versão {version} de {ws}/{proj} não ficou pronta a tempo; rode de novo mais tarde.")
         (dst / "SOURCE.txt").write_text(
             f"https://universe.roboflow.com/{ws}/{proj}/dataset/{version}\n", encoding="utf-8")
 
