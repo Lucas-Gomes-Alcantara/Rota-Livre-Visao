@@ -1,0 +1,11 @@
+# Classes do detector Rota Livre (ordem = id YOLO). Não altere a ordem depois de treinar.
+names:
+  0: buraco      # falha/buraco visível na superfície da calçada
+  1: desnivel    # irregularidade, elevação, placa levantada, degrau na faixa de circulação
+  2: obstaculo   # objeto fixo ou temporário que bloqueia/estreita a faixa de circulação
+
+# Mínimos usados por check_dataset.py para alertar sobre classes com poucos exemplos.
+min_instances:
+  train: 150
+  val: 30
+  test: 30

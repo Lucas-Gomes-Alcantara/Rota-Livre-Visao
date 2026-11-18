@@ -1,0 +1,9 @@
+# Versão exata usada no treino fica registrada em results/metrics/train_env.json e pip_freeze.txt.
+# Depois do primeiro treino, fixe aqui a versão da ultralytics (ex.: ultralytics==8.4.XXX).
+ultralytics>=8.4.10      # YOLO26 (AGPL-3.0); já instala torch, torchvision, opencv, numpy, matplotlib
+pyyaml>=6.0
+pillow>=10.1
+requests>=2.31
+roboflow>=1.1            # download das bases do Roboflow Universe
+gradio>=4.0              # interface da demonstração (src/demo_app.py)
+pandas>=2.0              # notebooks

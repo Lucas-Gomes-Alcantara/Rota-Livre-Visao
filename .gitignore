@@ -1,0 +1,14 @@
+# Dados e pesos não vão para o GitHub (tamanho + licenças). Ver datasets/README.md.
+data/raw/
+data/interim/
+data/processed/
+runs/
+models/*.pt
+demo_inputs/
+*.zip
+__pycache__/
+.ipynb_checkpoints/
+.env
+configs/data.yaml
+configs/data_test_br.yaml
+.env

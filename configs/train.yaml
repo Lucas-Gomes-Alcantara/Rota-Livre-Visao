@@ -1,0 +1,25 @@
+# Hiperparâmetros de treino (lidos por src/train.py). Tudo aqui vai para results/metrics/train_config_used.json.
+model: yolo26s.pt          # pesos iniciais pré-treinados no COCO (baixados automaticamente pela Ultralytics)
+data: configs/data.yaml    # gerado por src/split.py
+epochs: 100
+patience: 20               # early stopping: para se o mAP de validação não melhorar por 20 épocas
+imgsz: 640
+batch: 16                  # T4 (16 GB) do Colab gratuito; se der "CUDA out of memory", use 8
+optimizer: AdamW
+lr0: 0.001
+weight_decay: 0.0005
+cos_lr: true
+warmup_epochs: 3
+seed: 42
+deterministic: true
+workers: 2                 # Colab gratuito tem 2 vCPUs
+cache: false               # "ram" acelera, mas pode estourar a RAM do Colab gratuito
+# Aumentos de dados (padrões da Ultralytics, explicitados para documentação)
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+fliplr: 0.5
+mosaic: 1.0
+close_mosaic: 10
+project: runs/rota_livre
+name: yolo26s_v1

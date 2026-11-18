@@ -1,0 +1,104 @@
+# Fontes de dados do Rota Livre.
+# Cada fonte é convertida para YOLO por src/convert.py, com as classes remapeadas para configs/classes.yaml.
+#
+# Campos:
+#   path          pasta local da fonte (relativa à raiz do repositório)
+#   format        yolo | voc | coco
+#   enabled       true/false — fontes desligadas são ignoradas
+#   license       registrada no manifesto (confira antes de publicar qualquer imagem)
+#   class_map     classe original -> classe Rota Livre (null = descartar a caixa)
+#   group         como agrupar imagens que NÃO podem ser separadas entre treino/val/teste:
+#                   roboflow_stem   -> remove o sufixo "_jpg.rf.<hash>" (cópias aumentadas ficam juntas)
+#                   regex           -> usa group_regex (grupo 1) e, se houver, group_bucket
+#                   parent_dir      -> nome da pasta da imagem (ex.: um vídeo por pasta)
+#                   mapillary       -> id da sequência Mapillary (via metadata_csv)
+#   max_images    limite de imagens com caixas aproveitadas (evita que uma fonte domine)
+#   keep_empty    fração de imagens sem caixas mantidas como negativas (0 a 1)
+#   tags          rótulos livres; "br" marca imagens brasileiras (gera o conjunto test_br)
+
+sources:
+
+  pothole_chitholian:
+    enabled: true
+    path: data/raw/pothole_chitholian
+    format: yolo
+    license: "ODbL v1.0"
+    url: "https://universe.roboflow.com/pothole-skc/pothole-kvso8"
+    class_map:
+      pothole: buraco
+    group: roboflow_stem
+    keep_empty: 0.0
+    tags: [via]
+
+  sidewalk_walkability:
+    enabled: true
+    path: data/raw/sidewalk_walkability
+    format: yolo
+    license: "CC BY 4.0"
+    url: "https://universe.roboflow.com/sidewalk-detection/sidewalk-walkability"
+    class_map:
+      broken: desnivel        # PROVISÓRIO: confirmar na inspeção visual (visualize_labels.py)
+      obstruction: obstaculo
+    group: roboflow_stem
+    keep_empty: 0.1
+    tags: [calcada]
+
+  sidewalk_obstacles_blindspot:
+    enabled: true
+    path: data/raw/sidewalk_obstacles_blindspot
+    format: yolo
+    license: "CC BY 4.0"
+    url: "https://universe.roboflow.com/blindspot-fmcu0/sidewalk-obstacles"
+    class_map:
+      pole: obstaculo
+      ashcan: obstaculo
+      reflective_cone: obstaculo
+      spherical_roadblock: obstaculo
+      warning_column: obstaculo
+      fire_hydrant: obstaculo
+      # Veículos, pessoas e animais NÃO são barreiras por si só (podem estar na rua) -> descartados.
+      bicycle: null
+      motorbike: null
+      tricycle: null
+      car: null
+      bus: null
+      truck: null
+      person: null
+      dog: null
+      stop_sign: null
+    default_map: null          # classes não listadas (ex.: códigos numéricos) são descartadas
+    group: roboflow_stem
+    max_images: 1500
+    keep_empty: 0.0
+    tags: [calcada]
+
+  rdd2022:
+    enabled: false             # opcional: ~imagens de RUA; ligue só se "buraco" tiver poucos exemplos
+    path: data/raw/rdd2022
+    format: voc
+    license: "verificar (ver datasets/README.md)"
+    url: "https://figshare.com/articles/dataset/RDD2022_-_The_multi-national_Road_Damage_Dataset_released_through_CRDDC_2022/21431547"
+    class_map:
+      D40: buraco
+    default_map: null
+    group: regex
+    group_regex: '^([A-Za-z_]+?)_(\d+)$'   # ex.: Japan_000123 -> país + bloco de 50 quadros consecutivos
+    group_bucket: 50
+    max_images: 800
+    keep_empty: 0.0
+    tags: [via]
+
+  mapillary_br:
+    enabled: false             # ligue depois de anotar (ver docs/annotation_guide.md)
+    path: data/raw/mapillary_br_annotated
+    format: yolo
+    license: "CC BY-SA 4.0 (atribuição por imagem em data/raw/mapillary_br/metadata.csv)"
+    url: "https://www.mapillary.com"
+    class_map:
+      buraco: buraco
+      desnivel: desnivel
+      obstaculo: obstaculo
+    group: mapillary
+    metadata_csv: data/raw/mapillary_br/metadata.csv
+    keep_empty: 0.15
+    tags: [calcada, br]
