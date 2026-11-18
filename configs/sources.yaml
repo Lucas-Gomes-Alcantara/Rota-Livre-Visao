@@ -99,6 +99,6 @@ sources:
       desnivel: desnivel
       obstaculo: obstaculo
     group: mapillary
-    metadata_csv: data/raw/mapillary_br/metadata.csv
+    metadata_csv: data/raw/mapillary_br_v2/metadata.csv
     keep_empty: 0.15
     tags: [calcada, br]
