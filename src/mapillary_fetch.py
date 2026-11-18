@@ -62,6 +62,8 @@ def main():
     ap.add_argument("--n", type=int, default=300, help="total de imagens a baixar (somando as cidades)")
     ap.add_argument("--per-sequence", type=int, default=2)
     ap.add_argument("--require-sidewalk", action="store_true")
+    ap.add_argument("--max-checks-per-cell", type=int, default=12,
+                    help="máximo de imagens testadas por célula com --require-sidewalk (limita chamadas à API)")
     ap.add_argument("--out", default=str(ROOT / "data/raw/mapillary_br"))
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
@@ -76,6 +78,13 @@ def main():
     if meta_path.exists():
         with open(meta_path, encoding="utf-8") as f:
             existing = {r["id"] for r in csv.DictReader(f)}
+
+    fields = ["id", "sequence", "city", "creator", "captured_at", "lon", "lat", "url", "license"]
+    new_file = not meta_path.exists() or meta_path.stat().st_size == 0
+    meta_f = open(meta_path, "a", encoding="utf-8", newline="")
+    meta_w = csv.DictWriter(meta_f, fieldnames=fields)
+    if new_file:
+        meta_w.writeheader()
 
     rng = random.Random(args.seed)
     per_city = max(1, args.n // len(args.city))
@@ -92,6 +101,8 @@ def main():
             bbox = f"{x:.4f},{y:.4f},{x + CELL:.4f},{y + CELL:.4f}"
             data = get(f"{API}/images", {"fields": FIELDS, "bbox": bbox, "limit": 200}, token).get("data", [])
             rng.shuffle(data)
+            checks = 0
+            stats["celulas"] += 1
             for im in data:
                 stats["candidatas"] += 1
                 seq = im.get("sequence", "")
@@ -99,9 +110,13 @@ def main():
                     continue
                 if not im.get("thumb_2048_url"):
                     continue
-                if args.require_sidewalk and not has_sidewalk(im["id"], token):
-                    stats["sem_calcada"] += 1
-                    continue
+                if args.require_sidewalk:
+                    if checks >= args.max_checks_per_cell:
+                        break
+                    checks += 1
+                    if not has_sidewalk(im["id"], token):
+                        stats["sem_calcada"] += 1
+                        continue
                 dst = out / "images" / f"{im['id']}.jpg"
                 r = requests.get(im["thumb_2048_url"], timeout=60)
                 if r.status_code != 200:
@@ -115,21 +130,17 @@ def main():
                     "url": f"https://www.mapillary.com/app/?pKey={im['id']}",
                     "license": "CC BY-SA 4.0",
                 })
+                meta_w.writerow(rows[-1])
+                meta_f.flush()
                 per_seq[seq] += 1
                 existing.add(im["id"])
                 got += 1
-                print(f"\r{city}: {got}/{per_city}", end="", flush=True)
+                print(f"{city}: {got}/{per_city}  {dict(stats)}", flush=True)
                 if got >= per_city:
                     break
         print()
 
-    write_header = not meta_path.exists()
-    with open(meta_path, "a", encoding="utf-8", newline="") as f:
-        wr = csv.DictWriter(f, fieldnames=list(rows[0].keys()) if rows else
-                            ["id", "sequence", "city", "creator", "captured_at", "lon", "lat", "url", "license"])
-        if write_header:
-            wr.writeheader()
-        wr.writerows(rows)
+    meta_f.close()
     print(f"{len(rows)} imagens novas em {out/'images'} | sequências distintas: {len(per_seq)} | {dict(stats)}")
     print(f"Atribuição (CC BY-SA): {meta_path}")
 

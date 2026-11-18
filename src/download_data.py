@@ -82,6 +82,23 @@ def latest_version(project) -> int:
     raise RuntimeError("Nenhuma versão publicada encontrada; informe com --version nome=N")
 
 
+def fork_version(rf, original_slug: str):
+    """Acha o fork (slug começa com o slug original) no workspace da chave e gera uma versão se preciso."""
+    own = rf.workspace()
+    matches = [p for p in own.projects() if p.split("/")[-1].startswith(original_slug)]
+    if not matches:
+        sys.exit(f"Faça o fork de {original_slug} no Roboflow Universe (botão 'Fork Dataset') e rode de novo.")
+    project = own.project(matches[0].split("/")[-1])
+    try:
+        return project, latest_version(project)
+    except RuntimeError:
+        pass
+    print(f"  gerando versão de {matches[0]} (sem augmentation, só auto-orient) ...")
+    settings = {"preprocessing": {"auto-orient": True}, "augmentation": {}}
+    v = project.generate_version(settings)
+    return project, int(v)
+
+
 def cmd_roboflow(args):
     key = args.api_key or os.environ.get("ROBOFLOW_API_KEY")
     if not key:
@@ -95,7 +112,13 @@ def cmd_roboflow(args):
         project = rf.workspace(ws).project(proj)
         version = args.version.get(name) if args.version else None
         if version is None:
-            version = latest_version(project)
+            try:
+                version = latest_version(project)
+            except RuntimeError:
+                # Base sem versão publicada: usa o fork na conta da equipe (Universe -> "Fork Dataset")
+                print(f"  {ws}/{proj} não tem versão publicada; procurando fork na sua conta ...")
+                project, version = fork_version(rf, proj)
+                ws, proj = project.workspace, project.id.split("/")[-1]
         dst = RAW / name
         print(f"- {name}: {ws}/{proj} versão {version} -> {dst}")
         project.version(int(version)).download("yolov8", location=str(dst), overwrite=True)
