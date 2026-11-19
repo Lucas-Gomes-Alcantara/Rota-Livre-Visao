@@ -1,77 +1,92 @@
-# Rota Livre — Detecção de barreiras de acessibilidade em calçadas
+# Rota Livre — Visão computacional para alerta de barreiras na calçada
 
-Atividade **Applied Computer Vision (FIAP)** do projeto Rota Livre, plataforma CitizenTech para mapear
-barreiras que dificultam a circulação de pedestres, especialmente pessoas com deficiência, idosos e pessoas
-com mobilidade reduzida.
+Atividade **Applied Computer Vision (FIAP)** do projeto Rota Livre.
 
-Treinamos um detector de objetos (**Ultralytics YOLO26s**, a partir de pesos COCO) para encontrar três
-classes em fotos de calçadas, devolvendo caixa delimitadora, classe e confiança:
+Ferramenta que analisa vídeo em primeira pessoa da calçada, **detecta buracos, desníveis e obstáculos**
+que podem causar queda de pessoas com mobilidade reduzida ou deficiência visual (parcial ou total) e
+**avisa por voz e na tela** quando a barreira está no caminho à frente.
 
-| Classe | O que é |
+| Classe | O que detecta |
 |---|---|
-| `buraco` | falha ou ausência de material na superfície |
-| `desnivel` | placa levantada, raiz, afundamento, degrau na faixa de circulação |
-| `obstaculo` | objeto que reduz a largura livre de passagem |
+| `buraco` | falha ou ausência de piso, abertura na superfície |
+| `desnivel` | degrau, placa levantada/afundada, borda de laje, ressalto, piso quebrado em alturas diferentes |
+| `obstaculo` | poste, saco/caixa de lixo, lixeira, cone, entulho, vegetação ou objeto que estreita a passagem |
 
-Critérios completos de anotação: [`docs/annotation_guide.md`](docs/annotation_guide.md).
+## Como funciona
+1. **Detector** — Ultralytics **YOLO26s** treinado em duas fases:
+   (a) bases públicas (buracos, calçadas quebradas, obstáculos) e (b) ajuste fino com **quadros dos vídeos
+   gravados pela equipe** em calçadas reais (sol e sombra), anotados e revisados.
+2. **Sistema de alerta** (`src/alerta.py`) — filtra só o que está no **corredor de caminhada**, estima a
+   distância (muito perto / perto / à frente), confirma a detecção em vários quadros seguidos e fala o
+   aviso em português. Detalhes: [`docs/sistema_alerta.md`](docs/sistema_alerta.md).
 
-## Resultados
-> Preenchido com os números **reais** depois do treino — gerados em `results/metrics/eval_test.md` e
-> `results/metrics/eval_test_br.md`. Nenhuma métrica é escrita à mão.
+## Resultados (19/11/2026)
+Nos **3 vídeos de teste nunca vistos** (72 quadros, 141 objetos), o ajuste fino com os vídeos próprios
+triplicou o mAP@50: **0,435** contra 0,144 do modelo treinado só com bases públicas.
 
-## Como reproduzir (Google Colab gratuito)
-1. Os notebooks já clonam https://github.com/Lucas-Gomes-Alcantara/Rota-Livre-Visao.
-2. Crie as chaves gratuitas e salve em *Secrets* do Colab: `ROBOFLOW_API_KEY`, `MAPILLARY_TOKEN`
-   (passo a passo em [`datasets/README.md`](datasets/README.md)).
-3. Rode na ordem:
-   - `notebooks/01_exploracao.ipynb` — baixa e converte as bases; baixa fotos brasileiras para anotar.
-   - *(anotação no Roboflow, seguindo o guia)*
-   - `notebooks/02_preparacao.ipynb` — divisão sem vazamento, verificação e inspeção visual.
-   - `notebooks/03_treinamento.ipynb` — **GPU T4**: treino, avaliação, demonstração e interface ao vivo.
+| Modelo | Classe | Precision | Recall | F1 | mAP@50 |
+|---|---|---|---|---|---|
+| Fase 1 (só bases públicas) | geral | 0,214 | 0,174 | 0,192 | 0,144 |
+| **Fase 2 (final)** | obstáculo | 0,673 | 0,700 | 0,686 | 0,684 |
+| **Fase 2 (final)** | desnível | 0,539 | 0,219 | 0,311 | 0,185 |
+| **Fase 2 (final)** | **geral** | 0,606 | 0,459 | 0,523 | **0,435** |
 
-### Linha de comando (qualquer máquina com Python ≥ 3.10)
+No limiar do alerta (conf 0,35): obstáculos percebidos em 59 de 66 quadros; desnível é o ponto fraco
+(recall 0,16, precision 0,71). Inferência: 8,1 ms na RTX 4050 (≈63 FPS ponta a ponta), 102 ms em CPU.
+
+Arquivos em `results/metrics/` (gerados por `src/evaluate.py` e `src/operating_point.py`):
+- `eval_videos_teste.md` — **vídeos de teste nunca vistos no treino** (cenário real do projeto)
+- `eval_test.md` — teste completo (bases públicas + vídeos)
+- `eval_baseline_*.md` — mesmo teste com o modelo treinado só em dados públicos (comparação)
+
+- `operacao_videos_teste.md` — acertos, falsos alarmes e perdidos no limiar real do alerta
+
+Demonstrações (vídeos de teste, com voz): `results/demo/<video>_alerta.mp4` e a linha do tempo dos
+avisos em `results/demo/<video>_eventos.csv`. Modelo treinado: `models/final.pt`.
+
+## Reproduzir (Windows/Linux, GPU NVIDIA recomendada)
 ```bash
-pip install -r requirements.txt
-python src/download_data.py roboflow          # bases públicas -> data/raw/
-python src/convert.py                         # -> data/interim/ + manifest.csv
-python src/split.py                           # -> data/processed/ + configs/data.yaml
-python src/check_dataset.py --strict          # qualidade e vazamento
-python src/visualize_labels.py                # figuras para conferir anotações
-python src/train.py                           # treino (GPU recomendada)
-python src/evaluate.py --bench-cpu            # métricas no teste
-python src/predict.py --source foto.jpg       # demonstração por linha de comando
-python src/demo_app.py                        # demonstração com interface web
+python -m venv .venv && .venv\Scripts\activate          # Linux: source .venv/bin/activate
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+pip install -r requirements.txt pyttsx3 imageio-ffmpeg
+
+# 1) dados públicos (chaves em .env: ROBOFLOW_API_KEY) -> ver datasets/README.md
+python src/download_data.py roboflow
+# 2) quadros dos vídeos próprios (1 por segundo) + pré-anotação + revisão
+ffmpeg -i "Videos RUA/<video>.mp4" -vf "fps=1,scale=720:-2" data/raw/videos_calcada/images/<video>_f%03d.jpg
+python src/autolabel.py                    # propostas com detector de vocabulário aberto (YOLOE)
+python src/review_labels.py sheets         # folhas de revisão em work/review/
+python src/review_labels.py apply          # aplica data/raw/videos_calcada/revisao.yaml -> rótulos YOLO
+# 3) conversão, divisão sem vazamento, verificação
+python src/convert.py && python src/split.py && python src/check_dataset.py && python src/visualize_labels.py
+# 4) treino (fase 1: públicos; fase 2: ajuste fino com vídeos)
+python src/train.py --epochs 60 --batch 8 --name baseline_publico
+python src/train.py --model models/baseline_publico.pt --epochs 40 --batch 8 --name final_videos
+# 5) avaliação e demonstração
+python src/evaluate.py --weights models/final.pt --data configs/data_test_br.yaml --tag videos_teste
+python src/alerta.py --source "Videos RUA/20261119_125352.mp4" --weights models/final.pt
+python src/alerta.py --source 0 --live --weights models/final.pt          # câmera ao vivo
 ```
 
-### Teste de funcionamento do pipeline (sem GPU e sem internet)
-```bash
-python tests/test_pipeline.py
-```
-Gera dados sintéticos e confere conversão VOC/YOLO, remapeamento de classes, descarte de imagem corrompida,
-agrupamento de cópias aumentadas, união de quase-duplicatas entre bases, ausência de vazamento entre splits
-e detecção de rótulos inválidos.
+## Dados e divisão sem vazamento
+- Bases públicas (licenças e números): [`datasets/README.md`](datasets/README.md).
+- **Vídeos próprios**: 13 vídeos (≈5 min, 1080p, celular em primeira pessoa, sol e sombra).
+  **3 vídeos inteiros** (`124457`, `124907`, `125352`) ficam **só no teste**; os demais vão para treino/validação
+  com um grupo por vídeo — quadros do mesmo vídeo nunca ficam em splits diferentes.
+- Quase-duplicatas entre bases são unidas por hash perceptual antes da divisão.
+
+> Os notebooks em `notebooks/` são da primeira versão (Google Colab, só bases públicas). O fluxo final roda
+> localmente com os comandos acima.
 
 ## Estrutura
 ```
-configs/      classes.yaml · sources.yaml (bases + mapeamento de classes) · train.yaml (hiperparâmetros)
-datasets/     README.md — origem, licença e como obter cada base
-docs/         guia de anotação · decisões técnicas · roteiro do vídeo
-notebooks/    01_exploracao · 02_preparacao · 03_treinamento (Colab)
-src/          download_data · mapillary_fetch · convert · split · check_dataset · visualize_labels
-              train · evaluate · predict · demo_app · draw · common
-tests/        test_pipeline.py
-results/      metrics/ (JSON, CSV, MD) · figures/ · predictions/
+configs/   classes.yaml · sources.yaml (bases, mapeamento, vídeos de teste) · train.yaml
+src/       download_data · convert · split · check_dataset · visualize_labels
+           autolabel · review_labels (anotação dos vídeos) · train · evaluate · operating_point · predict · alerta · demo_app
+docs/      sistema_alerta · decisoes_tecnicas · annotation_guide · roteiro_video
+tests/     test_pipeline.py (pipeline de dados com dados sintéticos)
+results/   metrics/ · figures/ · demo/
 ```
 
-## Decisões técnicas
-Resumo em [`docs/decisoes_tecnicas.md`](docs/decisoes_tecnicas.md): por que YOLO26s, licença, divisão dos
-dados por grupo + deduplicação perceptual, hiperparâmetros e critério de seleção do modelo.
-
-## Licença e créditos
-- Código sob **AGPL-3.0** (exigência da Ultralytics YOLO para projetos abertos).
-- Dados de terceiros **não** são redistribuídos aqui. Créditos e licenças de cada base em
-  [`datasets/README.md`](datasets/README.md); fotos do Mapillary sob CC BY-SA 4.0 com autor por imagem.
-- Pesos do modelo treinado: publicados como *Release* do GitHub (arquivo `best.pt`).
-
-## Integrantes
-_(preencher)_
+## Licença
+Código sob **AGPL-3.0** (exigência da Ultralytics YOLO). Dados de terceiros não são redistribuídos aqui.

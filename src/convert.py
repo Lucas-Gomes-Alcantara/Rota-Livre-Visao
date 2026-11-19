@@ -234,6 +234,15 @@ def convert_source(name: str, cfg: dict, classes: list[str], out_root: Path, see
             "height": H,
             "orig_path": str(img),
         }
+        gk = group_key(img, src_root, cfg, seq_lookup)
+        forced = ""
+        for sp, gs in (cfg.get("split_groups") or {}).items():
+            if gk in set(gs):
+                forced = sp
+        if gk in set(cfg.get("test_groups", [])):
+            forced = "test"
+        row["forced_split"] = forced or cfg.get("default_split", "")
+        row["oversample"] = int(cfg.get("oversample", 1))
         for i, c in enumerate(classes):
             row[f"n_{c}"] = per_cls.get(i, 0)
         row["n_total"] = len(boxes)

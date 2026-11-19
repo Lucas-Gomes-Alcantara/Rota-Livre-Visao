@@ -1,0 +1,17 @@
+{
+  "data_utc": "2026-11-19T18:45:55+00:00",
+  "python": "3.12.2",
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "ultralytics": "8.4.215",
+  "torch": "2.6.0+cu124",
+  "cuda_disponivel": true,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_memoria_gb": 6.4,
+  "cuda": "12.4",
+  "tempo_treino_segundos": 1921.4,
+  "tempo_treino_legivel": "0h32min",
+  "diretorio_execucao": "D:\\Projects\\rota-livre-visao\\runs\\rota_livre\\final_videos_v2",
+  "epocas_executadas": 40,
+  "melhor_fitness_validacao": 0.3773,
+  "retomado": false
+}

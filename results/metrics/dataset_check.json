@@ -1,0 +1,42 @@
+{
+  "imagens_por_split": {
+    "train": 1792,
+    "val": 306,
+    "test": 368
+  },
+  "imagens_sem_caixa_por_split": {
+    "train": 32,
+    "val": 2,
+    "test": 4
+  },
+  "instancias_por_split": {
+    "train": {
+      "buraco": 1219,
+      "desnivel": 183,
+      "obstaculo": 3013
+    },
+    "val": {
+      "buraco": 262,
+      "desnivel": 12,
+      "obstaculo": 550
+    },
+    "test": {
+      "buraco": 262,
+      "desnivel": 40,
+      "obstaculo": 648
+    }
+  },
+  "classes_insuficientes": [
+    {
+      "split": "val",
+      "classe": "desnivel",
+      "instancias": 12,
+      "minimo": 30
+    }
+  ],
+  "erros": [],
+  "avisos": [
+    "1 caixas com menos de 4 px de lado (revise a anotação)",
+    "classe 'desnivel' tem 12 instâncias em val (mínimo recomendado 30)"
+  ]
+}

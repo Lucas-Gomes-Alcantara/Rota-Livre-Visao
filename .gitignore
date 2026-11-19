@@ -12,3 +12,9 @@ __pycache__/
 configs/data.yaml
 configs/data_test_br.yaml
 .env
+
+# Vídeos brutos e área de trabalho (grandes)
+Videos RUA/
+work/
+.venv/
+*.mp4

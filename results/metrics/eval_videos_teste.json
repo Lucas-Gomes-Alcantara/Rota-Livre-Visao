@@ -1,0 +1,120 @@
+{
+  "tag": "videos_teste",
+  "modelo": "final.pt",
+  "dados": "configs\\data_test_br.yaml",
+  "split": "test",
+  "imagens": 72,
+  "instancias": 141,
+  "por_classe": [
+    {
+      "classe": "desnivel",
+      "precision": 0.5388724796328445,
+      "recall": 0.21875,
+      "f1": 0.31117966556855703,
+      "map50": 0.18542895784716834,
+      "map50_95": 0.08190853546970664
+    },
+    {
+      "classe": "obstaculo",
+      "precision": 0.6734481316926746,
+      "recall": 0.7000641786424581,
+      "f1": 0.6864982710736626,
+      "map50": 0.6836930660045738,
+      "map50_95": 0.39141392415083154
+    }
+  ],
+  "classes_sem_instancias_no_split": [
+    "buraco"
+  ],
+  "geral": {
+    "classe": "**Geral (média)**",
+    "precision": 0.6061603056627596,
+    "recall": 0.45940708932122903,
+    "f1": 0.5226780455135441,
+    "map50": 0.43456101192587104,
+    "map50_95": 0.23666122981026905
+  },
+  "tempo_ultralytics_ms": {
+    "preprocess": 0.6579013888767804,
+    "inference": 8.105673611074357,
+    "loss": 0.0007444444539335867,
+    "postprocess": 1.0272375000365879
+  },
+  "dispositivo_validacao": "GPU",
+  "latencia_ponta_a_ponta": [
+    {
+      "dispositivo": "GPU NVIDIA GeForce RTX 4050 Laptop GPU",
+      "imagens_medidas": 50,
+      "media_ms": 15.9,
+      "mediana_ms": 15.8,
+      "p95_ms": 16.7,
+      "fps_aprox": 62.9
+    }
+  ],
+  "matriz_confusao": {
+    "rotulos": [
+      "buraco",
+      "desnivel",
+      "obstaculo",
+      "fundo"
+    ],
+    "linhas_previsto_colunas_real": [
+      [
+        0,
+        0,
+        0,
+        42
+      ],
+      [
+        0,
+        12,
+        0,
+        185
+      ],
+      [
+        0,
+        0,
+        95,
+        629
+      ],
+      [
+        0,
+        20,
+        14,
+        0
+      ]
+    ]
+  },
+  "erros_mais_frequentes": [
+    {
+      "real": "fundo",
+      "previsto": "obstaculo",
+      "quantidade": 629,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "fundo",
+      "previsto": "desnivel",
+      "quantidade": 185,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "fundo",
+      "previsto": "buraco",
+      "quantidade": 42,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "desnivel",
+      "previsto": "fundo",
+      "quantidade": 20,
+      "tipo": "falso negativo (não detectou)"
+    },
+    {
+      "real": "obstaculo",
+      "previsto": "fundo",
+      "quantidade": 14,
+      "tipo": "falso negativo (não detectou)"
+    }
+  ]
+}

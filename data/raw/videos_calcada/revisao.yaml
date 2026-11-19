@@ -1,0 +1,155 @@
+# Revisão manual das pré-anotações (ver src/review_labels.py). Índices = números nas folhas work/review/.
+imagens:
+  20261119_124322_f001.jpg: {remover: [1]}
+  20261119_124322_f007.jpg: {remover: [0, 2]}
+  20261119_124322_f015.jpg: {adicionar: [[desnivel, 0.0, 0.38, 0.98, 0.46]]}
+  20261119_124322_f017.jpg: {remover: [1], adicionar: [[obstaculo, 0.2, 0.0, 0.36, 0.2], [desnivel, 0.0, 0.26, 1.0, 0.32]]}
+  20261119_124322_f019.jpg: {remover: [0], adicionar: [[desnivel, 0.0, 0.66, 1.0, 0.73]]}
+  20261119_124346_f001.jpg: {remover: [0], adicionar: [[obstaculo, 0.24, 0.09, 0.33, 0.16], [desnivel, 0.08, 0.24, 0.9, 0.33]]}
+  20261119_124346_f003.jpg: {adicionar: [[desnivel, 0.05, 0.24, 0.92, 0.33], [obstaculo, 0.23, 0.02, 0.31, 0.08]]}
+  20261119_124346_f005.jpg: {remover: [0], adicionar: [[desnivel, 0.0, 0.57, 1.0, 0.69]]}
+  20261119_124346_f009.jpg: {remover: [2], adicionar: [[desnivel, 0.0, 0.37, 1.0, 0.44]]}
+  20261119_124419_f003.jpg: {adicionar: [[obstaculo, 0.62, 0.0, 0.82, 0.31]]}
+  20261119_124419_f005.jpg: {adicionar: [[obstaculo, 0.9, 0.52, 1.0, 0.95]]}
+  20261119_124457_f001.jpg: {adicionar: [[desnivel, 0.35, 0.26, 0.85, 0.33]]}
+  20261119_124457_f002.jpg: {adicionar: [[desnivel, 0.28, 0.37, 1.0, 0.47], [desnivel, 0.6, 0.6, 1.0, 0.68]]}
+  20261119_124457_f003.jpg: {adicionar: [[desnivel, 0.2, 0.66, 0.78, 0.73]]}
+  20261119_124457_f006.jpg: {remover: [1]}
+  20261119_124457_f008.jpg: {remover: [0, 1, 2], adicionar: [[desnivel, 0.05, 0.15, 1.0, 0.21]]}
+  20261119_124457_f009.jpg: {remover: [0], adicionar: [[desnivel, 0.05, 0.26, 1.0, 0.32], [obstaculo, 0.55, 0.0, 0.63, 0.08]]}
+  20261119_124457_f010.jpg: {adicionar: [[desnivel, 0.0, 0.44, 1.0, 0.5], [obstaculo, 0.66, 0.0, 0.75, 0.17], [obstaculo, 0.55, 0.0, 0.64, 0.06]]}
+  20261119_124457_f011.jpg: {adicionar: [[obstaculo, 0.5, 0.02, 0.57, 0.07], [obstaculo, 0.65, 0.0, 0.73, 0.25], [desnivel, 0.05, 0.89, 1.0, 0.97]]}
+  20261119_124457_f012.jpg: {remover: [0], adicionar: [[obstaculo, 0.47, 0.02, 0.57, 0.07], [obstaculo, 0.7, 0.0, 0.8, 0.28]]}
+  20261119_124457_f013.jpg: {remover: [0], adicionar: [[obstaculo, 0.9, 0.0, 1.0, 0.55]]}
+  20261119_124457_f014.jpg: {remover: [0], adicionar: [[obstaculo, 0.6, 0.0, 0.73, 0.2]]}
+  20261119_124457_f015.jpg: {remover: [1]}
+  20261119_124457_f016.jpg: {adicionar: [[obstaculo, 0.9, 0.39, 1.0, 0.5]]}
+  20261119_124529_f001.jpg: {adicionar: [[obstaculo, 0.5, 0.0, 0.57, 0.16], [obstaculo, 0.74, 0.19, 0.8, 0.27]]}
+  20261119_124529_f003.jpg: {adicionar: [[obstaculo, 0.64, 0.0, 0.75, 0.48]]}
+  20261119_124529_f005.jpg: {adicionar: [[desnivel, 0.2, 0.56, 1.0, 0.64]]}
+  20261119_124529_f007.jpg: {adicionar: [[obstaculo, 0.49, 0.03, 0.56, 0.25]]}
+  20261119_124529_f009.jpg: {adicionar: [[obstaculo, 0.6, 0.0, 0.7, 0.28], [obstaculo, 0.77, 0.05, 0.9, 0.36]]}
+  20261119_124529_f011.jpg: {adicionar: [[obstaculo, 0.57, 0.0, 0.65, 0.32]]}
+  20261119_124529_f013.jpg: {adicionar: [[obstaculo, 0.63, 0.0, 0.73, 0.37]]}
+  20261119_124529_f015.jpg: {remover: [0], adicionar: [[obstaculo, 0.93, 0.0, 1.0, 0.53]]}
+  20261119_124529_f017.jpg: {adicionar: [[desnivel, 0.0, 0.4, 0.32, 0.53], [obstaculo, 0.57, 0.0, 0.63, 0.19]]}
+  20261119_124604_f001.jpg: {remover: [2, 4]}
+  20261119_124604_f003.jpg: {remover: [1, 2], adicionar: [[desnivel, 0.35, 0.26, 0.85, 0.34], [desnivel, 0.0, 0.57, 0.75, 0.64]]}
+  20261119_124604_f005.jpg: {adicionar: [[desnivel, 0.0, 0.53, 1.0, 0.8], [desnivel, 0.55, 0.19, 1.0, 0.38], [obstaculo, 0.8, 0.0, 0.9, 0.17]]}
+  20261119_124604_f007.jpg: {remover: [0], adicionar: [[obstaculo, 0.0, 0.0, 0.25, 0.48], [desnivel, 0.0, 0.57, 1.0, 0.76]]}
+  20261119_124604_f009.jpg: {adicionar: [[desnivel, 0.0, 0.05, 0.47, 0.13]]}
+  20261119_124604_f011.jpg: {adicionar: [[desnivel, 0.0, 0.18, 0.75, 0.28]]}
+  20261119_124604_f013.jpg: {adicionar: [[desnivel, 0.1, 0.37, 1.0, 0.5]]}
+  20261119_124604_f015.jpg: {adicionar: [[obstaculo, 0.57, 0.19, 1.0, 0.4], [desnivel, 0.0, 0.8, 1.0, 0.96]]}
+  20261119_124604_f017.jpg: {adicionar: [[obstaculo, 0.69, 0.2, 1.0, 0.46], [obstaculo, 0.74, 0.0, 0.88, 0.3], [desnivel, 0.45, 0.43, 0.95, 0.55]]}
+  20261119_124604_f019.jpg: {adicionar: [[obstaculo, 0.79, 0.0, 0.92, 0.42], [obstaculo, 0.86, 0.25, 1.0, 0.66], [obstaculo, 0.62, 0.0, 0.8, 0.27], [desnivel, 0.0, 0.7, 0.27, 0.96]]}
+  20261119_124728_f001.jpg: {remover: [0], adicionar: [[obstaculo, 0.37, 0.06, 0.45, 0.4], [obstaculo, 0.08, 0.0, 0.24, 0.4]]}
+  20261119_124728_f003.jpg: {adicionar: [[obstaculo, 0.05, 0.0, 0.2, 0.6], [buraco, 0.2, 0.49, 0.58, 0.59]]}
+  20261119_124728_f007.jpg: {adicionar: [[obstaculo, 0.41, 0.05, 0.47, 0.41]]}
+  20261119_124728_f009.jpg: {adicionar: [[obstaculo, 0.29, 0.0, 0.34, 0.43]]}
+  20261119_124728_f011.jpg: {adicionar: [[obstaculo, 0.42, 0.3, 0.48, 0.43]]}
+  20261119_124728_f013.jpg: {adicionar: [[obstaculo, 0.44, 0.3, 0.5, 0.49]]}
+  20261119_124907_f002.jpg: {adicionar: [[obstaculo, 0.82, 0.0, 1.0, 0.72]]}
+  20261119_124907_f003.jpg: {remover: [0], adicionar: [[obstaculo, 0.78, 0.0, 1.0, 1.0], [obstaculo, 0.72, 0.0, 0.8, 0.45], [desnivel, 0.57, 0.5, 0.8, 0.56]]}
+  20261119_124907_f004.jpg: {remover: [0], adicionar: [[obstaculo, 0.8, 0.0, 1.0, 0.66], [obstaculo, 0.44, 0.0, 0.57, 0.37], [desnivel, 0.32, 0.48, 0.6, 0.55]]}
+  20261119_124907_f005.jpg: {remover: [0], adicionar: [[obstaculo, 0.4, 0.0, 0.48, 0.34]]}
+  20261119_124907_f006.jpg: {remover: [0], adicionar: [[desnivel, 0.27, 0.52, 0.9, 0.79], [obstaculo, 0.65, 0.0, 0.76, 0.3]]}
+  20261119_124907_f007.jpg: {remover: [1], adicionar: [[obstaculo, 0.64, 0.0, 0.78, 0.33]]}
+  20261119_124907_f008.jpg: {adicionar: [[obstaculo, 0.5, 0.0, 0.62, 0.38]]}
+  20261119_124907_f009.jpg: {adicionar: [[obstaculo, 0.36, 0.0, 0.53, 0.42], [obstaculo, 0.9, 0.0, 1.0, 0.4]]}
+  20261119_124907_f010.jpg: {adicionar: [[obstaculo, 0.08, 0.0, 0.3, 0.54], [obstaculo, 0.8, 0.0, 1.0, 0.5]]}
+  20261119_124907_f011.jpg: {manter: [0]}
+  20261119_125009_f001.jpg: {remover: [0], adicionar: [[obstaculo, 0.5, 0.0, 0.67, 0.54], [obstaculo, 0.35, 0.12, 0.42, 0.36]]}
+  20261119_125009_f003.jpg: {remover: [0], adicionar: [[obstaculo, 0.52, 0.0, 0.82, 0.86], [obstaculo, 0.27, 0.0, 0.38, 0.46]]}
+  20261119_125009_f005.jpg: {adicionar: [[obstaculo, 0.0, 0.0, 0.17, 0.54]]}
+  20261119_125009_f007.jpg: {adicionar: [[obstaculo, 0.25, 0.0, 0.44, 0.57]]}
+  20261119_125009_f009.jpg: {adicionar: [[obstaculo, 0.13, 0.0, 0.48, 0.81]]}
+  20261119_125009_f013.jpg: {remover: [1], adicionar: [[obstaculo, 0.46, 0.0, 0.55, 0.5]]}
+  20261119_125009_f015.jpg: {adicionar: [[obstaculo, 0.42, 0.0, 0.55, 0.51]]}
+  20261119_125009_f017.jpg: {remover: [0], adicionar: [[obstaculo, 0.4, 0.0, 0.54, 0.6]]}
+  20261119_125031_f005.jpg: {adicionar: [[obstaculo, 0.3, 0.0, 0.38, 0.43]]}
+  20261119_125031_f007.jpg: {adicionar: [[obstaculo, 0.33, 0.0, 0.42, 0.46]]}
+  20261119_125031_f009.jpg: {adicionar: [[obstaculo, 0.38, 0.0, 0.52, 0.46]]}
+  20261119_125031_f011.jpg: {adicionar: [[obstaculo, 0.3, 0.0, 0.46, 0.56]]}
+  20261119_125031_f015.jpg: {adicionar: [[obstaculo, 0.38, 0.0, 0.76, 0.89]]}
+  20261119_125031_f017.jpg: {remover: [0, 1], adicionar: [[desnivel, 0.0, 0.7, 1.0, 0.8]]}
+  20261119_125031_f021.jpg: {manter: [0]}
+  20261119_125031_f023.jpg: {remover: [0, 2, 3]}
+  20261119_125031_f025.jpg: {remover: [1]}
+  20261119_125031_f027.jpg: {remover: [3]}
+  20261119_125031_f035.jpg: {adicionar: [[desnivel, 0.22, 0.41, 0.6, 0.48], [obstaculo, 0.54, 0.0, 0.62, 0.31]]}
+  20261119_125031_f037.jpg: {remover: [1], adicionar: [[desnivel, 0.18, 0.53, 0.7, 0.6], [obstaculo, 0.62, 0.0, 0.68, 0.3]]}
+  20261119_125031_f039.jpg: {adicionar: [[obstaculo, 0.6, 0.0, 0.65, 0.22]]}
+  20261119_125031_f041.jpg: {remover: [1, 2], adicionar: [[obstaculo, 0.45, 0.15, 0.55, 0.42]]}
+  20261119_125031_f043.jpg: {adicionar: [[obstaculo, 0.62, 0.0, 0.78, 0.46]]}
+  20261119_125031_f045.jpg: {adicionar: [[obstaculo, 0.08, 0.0, 0.3, 0.63]]}
+  20261119_125031_f047.jpg: {remover: [0], adicionar: [[desnivel, 0.72, 0.48, 0.95, 1.0]]}
+  20261119_125031_f049.jpg: {adicionar: [[desnivel, 0.0, 0.74, 0.98, 0.84], [desnivel, 0.3, 0.46, 0.75, 0.51]]}
+  20261119_125031_f051.jpg: {remover: [0], adicionar: [[desnivel, 0.0, 0.53, 0.62, 0.61], [obstaculo, 0.18, 0.94, 0.48, 1.0]]}
+  20261119_125031_f053.jpg: {adicionar: [[obstaculo, 0.64, 0.44, 0.72, 0.5], [obstaculo, 0.69, 0.0, 0.75, 0.42]]}
+  20261119_125031_f055.jpg: {adicionar: [[obstaculo, 0.73, 0.0, 0.8, 0.42]]}
+  20261119_125031_f057.jpg: {adicionar: [[obstaculo, 0.5, 0.0, 0.56, 0.36]]}
+  20261119_125031_f059.jpg: {adicionar: [[obstaculo, 0.42, 0.0, 0.55, 0.26]]}
+  20261119_125031_f063.jpg: {remover: [0]}
+  20261119_125031_f067.jpg: {remover: [0]}
+  20261119_125213_f001.jpg: {adicionar: [[desnivel, 0.3, 0.27, 0.66, 0.33], [desnivel, 0.45, 0.52, 0.8, 0.59]]}
+  20261119_125213_f003.jpg: {adicionar: [[desnivel, 0.3, 0.37, 0.66, 0.43], [obstaculo, 0.55, 0.0, 0.6, 0.38]]}
+  20261119_125213_f005.jpg: {adicionar: [[desnivel, 0.25, 0.41, 0.66, 0.48], [obstaculo, 0.53, 0.0, 0.59, 0.38]]}
+  20261119_125213_f007.jpg: {adicionar: [[desnivel, 0.3, 0.41, 0.66, 0.5], [obstaculo, 0.43, 0.0, 0.5, 0.37]]}
+  20261119_125213_f009.jpg: {adicionar: [[desnivel, 0.0, 0.69, 1.0, 0.76]]}
+  20261119_125213_f011.jpg: {adicionar: [[desnivel, 0.05, 0.6, 1.0, 0.68]]}
+  20261119_125213_f015.jpg: {adicionar: [[obstaculo, 0.0, 0.0, 0.35, 1.0], [obstaculo, 0.5, 0.05, 1.0, 0.8]]}
+  20261119_125252_f001.jpg: {adicionar: [[obstaculo, 0.3, 0.0, 0.39, 0.39], [desnivel, 0.25, 0.38, 0.75, 0.5]]}
+  20261119_125252_f003.jpg: {adicionar: [[obstaculo, 0.54, 0.0, 0.65, 0.45], [desnivel, 0.3, 0.57, 1.0, 0.66], [obstaculo, 0.9, 0.49, 1.0, 0.57]]}
+  20261119_125252_f005.jpg: {adicionar: [[obstaculo, 0.75, 0.0, 0.97, 0.67]]}
+  20261119_125252_f007.jpg: {adicionar: [[obstaculo, 0.45, 0.0, 0.52, 0.38]]}
+  20261119_125252_f009.jpg: {adicionar: [[obstaculo, 0.6, 0.0, 0.67, 0.38]]}
+  20261119_125252_f011.jpg: {adicionar: [[obstaculo, 0.64, 0.0, 0.72, 0.37]]}
+  20261119_125252_f013.jpg: {remover: [0], adicionar: [[obstaculo, 0.62, 0.0, 0.72, 0.46]]}
+  20261119_125252_f015.jpg: {remover: [0], adicionar: [[obstaculo, 0.66, 0.0, 0.83, 0.52]]}
+  20261119_125252_f017.jpg: {adicionar: [[desnivel, 0.58, 0.42, 1.0, 0.48]]}
+  20261119_125252_f019.jpg: {remover: [0], adicionar: [[desnivel, 0.25, 0.58, 1.0, 0.66], [desnivel, 0.1, 0.72, 1.0, 0.79], [obstaculo, 0.75, 0.1, 0.81, 0.34]]}
+  20261119_125252_f021.jpg: {adicionar: [[obstaculo, 0.75, 0.1, 0.81, 0.37]]}
+  20261119_125252_f023.jpg: {adicionar: [[obstaculo, 0.76, 0.1, 0.82, 0.42]]}
+  20261119_125352_f001.jpg: {remover: [2], adicionar: [[desnivel, 0.12, 0.36, 0.65, 0.43]]}
+  20261119_125352_f002.jpg: {remover: [2], adicionar: [[desnivel, 0.25, 0.54, 0.92, 0.6], [obstaculo, 0.58, 0.0, 0.63, 0.3]]}
+  20261119_125352_f003.jpg: {remover: [0, 3], adicionar: [[desnivel, 0.35, 0.62, 0.98, 0.88], [obstaculo, 0.4, 0.0, 0.47, 0.34]]}
+  20261119_125352_f004.jpg: {remover: [1, 3], adicionar: [[obstaculo, 0.4, 0.0, 0.46, 0.34]]}
+  20261119_125352_f005.jpg: {adicionar: [[obstaculo, 0.44, 0.0, 0.5, 0.41]]}
+  20261119_125352_f006.jpg: {remover: [2], adicionar: [[obstaculo, 0.47, 0.0, 0.53, 0.43]]}
+  20261119_125352_f007.jpg: {adicionar: [[obstaculo, 0.3, 0.0, 0.37, 0.43]]}
+  20261119_125352_f008.jpg: {remover: [1], adicionar: [[obstaculo, 0.33, 0.0, 0.42, 0.44], [desnivel, 0.15, 0.49, 0.55, 0.55]]}
+  20261119_125352_f009.jpg: {adicionar: [[obstaculo, 0.57, 0.41, 0.66, 0.47], [obstaculo, 0.49, 0.42, 0.55, 0.46], [obstaculo, 0.42, 0.0, 0.5, 0.43], [desnivel, 0.2, 0.5, 0.6, 0.56]]}
+  20261119_125352_f010.jpg: {adicionar: [[obstaculo, 0.52, 0.0, 0.62, 0.46], [desnivel, 0.25, 0.6, 1.0, 0.69]]}
+  20261119_125352_f011.jpg: {adicionar: [[obstaculo, 0.5, 0.0, 0.62, 0.48], [obstaculo, 0.6, 0.45, 0.67, 0.51]]}
+  20261119_125352_f012.jpg: {adicionar: [[obstaculo, 0.48, 0.0, 0.6, 0.49], [obstaculo, 0.6, 0.46, 0.69, 0.53]]}
+  20261119_125352_f013.jpg: {adicionar: [[obstaculo, 0.4, 0.0, 0.6, 0.6], [obstaculo, 0.57, 0.52, 0.68, 0.6]]}
+  20261119_125352_f014.jpg: {adicionar: [[obstaculo, 0.4, 0.0, 0.63, 0.7]]}
+  20261119_125352_f015.jpg: {remover: [0, 1], adicionar: [[obstaculo, 0.55, 0.0, 0.98, 1.0]]}
+  20261119_125352_f016.jpg: {remover: [0, 1], adicionar: [[obstaculo, 0.53, 0.0, 0.58, 0.45]]}
+  20261119_125352_f017.jpg: {remover: [1], adicionar: [[obstaculo, 0.4, 0.0, 0.5, 0.42], [desnivel, 0.2, 0.59, 1.0, 0.65]]}
+  20261119_125352_f018.jpg: {remover: [0, 1], adicionar: [[desnivel, 0.0, 0.64, 1.0, 0.73], [obstaculo, 0.4, 0.0, 0.46, 0.43]]}
+  20261119_125352_f019.jpg: {remover: [0], adicionar: [[desnivel, 0.0, 0.76, 1.0, 0.87], [obstaculo, 0.42, 0.15, 0.47, 0.45]]}
+  20261119_125352_f020.jpg: {adicionar: [[obstaculo, 0.42, 0.0, 0.48, 0.43]]}
+  20261119_125352_f021.jpg: {remover: [0], adicionar: [[obstaculo, 0.47, 0.0, 0.52, 0.37]]}
+  20261119_125352_f022.jpg: {adicionar: [[obstaculo, 0.53, 0.0, 0.58, 0.33]]}
+  20261119_125352_f023.jpg: {adicionar: [[obstaculo, 0.57, 0.0, 0.63, 0.33], [obstaculo, 0.48, 0.29, 0.56, 0.33]]}
+  20261119_125352_f024.jpg: {remover: [0], adicionar: [[obstaculo, 0.6, 0.0, 0.65, 0.43]]}
+  20261119_125352_f025.jpg: {remover: [0]}
+  20261119_125352_f026.jpg: {adicionar: [[obstaculo, 0.44, 0.0, 0.54, 0.49], [obstaculo, 0.34, 0.47, 0.45, 0.51]]}
+  20261119_125352_f027.jpg: {remover: [1], adicionar: [[obstaculo, 0.62, 0.0, 0.77, 0.53]]}
+  20261119_125352_f028.jpg: {adicionar: [[obstaculo, 0.68, 0.0, 0.82, 0.59]]}
+  20261119_125352_f029.jpg: {adicionar: [[obstaculo, 0.78, 0.0, 0.96, 0.6]]}
+  20261119_125352_f030.jpg: {adicionar: [[obstaculo, 0.86, 0.0, 1.0, 0.8], [obstaculo, 0.65, 0.0, 0.7, 0.33]]}
+  20261119_125352_f031.jpg: {adicionar: [[desnivel, 0.2, 0.48, 1.0, 0.56], [obstaculo, 0.59, 0.0, 0.65, 0.33]]}
+  20261119_125352_f032.jpg: {adicionar: [[desnivel, 0.0, 0.65, 1.0, 0.75]]}
+  20261119_125352_f033.jpg: {adicionar: [[desnivel, 0.0, 0.58, 1.0, 0.8], [obstaculo, 0.2, 0.0, 0.3, 0.37]]}
+  20261119_125352_f034.jpg: {remover: [0], adicionar: [[obstaculo, 0.73, 0.0, 0.86, 0.31], [desnivel, 0.0, 0.21, 0.75, 0.28]]}
+  20261119_125352_f035.jpg: {adicionar: [[desnivel, 0.35, 0.29, 1.0, 0.36], [obstaculo, 0.42, 0.27, 0.48, 0.31]]}
+  20261119_125352_f036.jpg: {adicionar: [[desnivel, 0.2, 0.37, 1.0, 0.44]]}
+  20261119_125352_f037.jpg: {adicionar: [[desnivel, 0.33, 0.4, 1.0, 0.47]]}
+  20261119_125352_f038.jpg: {remover: [0], adicionar: [[desnivel, 0.15, 0.49, 1.0, 0.57]]}
+  20261119_125352_f039.jpg: {remover: [0], adicionar: [[desnivel, 0.05, 0.59, 1.0, 0.72]]}
+  20261119_125352_f042.jpg: {adicionar: [[obstaculo, 0.4, 0.32, 0.5, 0.36]]}
+  20261119_125352_f043.jpg: {remover: [2]}
+  20261119_125352_f044.jpg: {adicionar: [[obstaculo, 0.27, 0.32, 0.4, 0.4]]}

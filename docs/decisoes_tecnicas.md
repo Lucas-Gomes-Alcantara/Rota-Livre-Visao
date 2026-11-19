@@ -29,9 +29,25 @@ Se der falta de memória, a alternativa documentada é `batch 8`; se o tempo de 
   Ultralytics **ou** retreinar com RF-DETR (Apache 2.0), cujo formato de dados já é compatível com este pipeline.
 
 ## Dados
-Nenhuma base pública cobre as três classes com caixas em calçadas. Estratégia: combinar bases abertas já
-anotadas (Roboflow Universe) com fotos brasileiras do Mapillary anotadas pela equipe. Detalhes e licenças
-em `datasets/README.md`.
+Nenhuma base pública cobre as três classes com caixas em calçadas brasileiras vistas em primeira pessoa.
+Estratégia final (19/11/2026):
+1. **Fase 1 — bases públicas** (Roboflow Universe): buracos (665 imagens), calçadas quebradas (50) e
+   obstáculos de calçada (1.261). Dão volume, mas são de outro domínio (rua, fotos de produto).
+2. **Fase 2 — vídeos próprios**: 13 vídeos gravados pela equipe com o celular em primeira pessoa, em
+   calçadas reais, com sol e sombra. Extraído 1 quadro por segundo (292 quadros, 720×1280).
+   - **Pré-anotação** com um detector de vocabulário aberto (YOLOE-11L, prompts como "trash bag", "pole",
+     "raised paving stone") e **revisão manual de todos os quadros usados** (`data/raw/videos_calcada/revisao.yaml`):
+     propostas erradas removidas, caixas faltantes adicionadas (degraus, bordas de laje, postes).
+   - Regras automáticas antes da revisão: descartar propostas que ocupam > 35% do quadro e buraco/desnível
+     com confiança < 0,35 (o modelo de vocabulário aberto confunde "piso" inteiro com "piso quebrado").
+   - Resultado: 184 quadros revisados, 72 caixas de desnível, 246 de obstáculo (buraco quase não aparece nos vídeos).
+   - O Mapillary foi abandonado: as fotos são de câmera de carro e quase não mostram a calçada.
+
+## Por que treinar em duas fases
+O modelo da fase 1 aprende o conceito geral das classes com mais dados; a fase 2 (ajuste fino partindo dos
+pesos da fase 1, quadros de vídeo repetidos 4× no treino) adapta ao domínio real: câmera de celular,
+perspectiva de pedestre, calçadas brasileiras, sombras fortes. A comparação fase 1 × fase 2 nos mesmos vídeos
+de teste mede o ganho da adaptação.
 
 ## Divisão treino/validação/teste (sem vazamento)
 1. **Por grupo, não por imagem.** Cópias aumentadas do Roboflow (`foto_jpg.rf.<hash>`), quadros da mesma
@@ -41,7 +57,8 @@ em `datasets/README.md`.
 3. **Estratificação por fonte e classe.** Cada fonte é dividida separadamente em 70/15/15, equilibrando o
    número de caixas de cada classe entre os splits.
 4. **Teste intocado.** O teste não é usado para escolher modelo nem hiperparâmetros; só para a avaliação final.
-5. **test_br.** Subconjunto do teste com fotos brasileiras: mede generalização para o contexto real do projeto.
+5. **Vídeos de teste.** Três vídeos inteiros (`124457`, `124907`, `125352`, ≈72 s, com sol e sombra) só no teste;
+   usados nas métricas `videos_teste` e nas demonstrações de alerta — o modelo nunca viu nenhum quadro deles.
 Verificação automática: `split_report.json` registra quantos grupos aparecem em mais de um split (deve ser 0)
 e `check_dataset.py` procura imagens idênticas (MD5) entre splits.
 

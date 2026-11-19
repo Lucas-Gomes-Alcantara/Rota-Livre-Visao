@@ -1,0 +1,7319 @@
+{
+ "modelo": "yoloe-11l-seg.pt",
+ "conf": 0.15,
+ "imagens": {
+  "20261119_124322_f001.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.809,
+    "xyxy": [
+     0.5746,
+     0.2322,
+     0.6918,
+     0.2956
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.26,
+    "xyxy": [
+     0.5094,
+     0.2536,
+     0.5869,
+     0.2973
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.157,
+    "xyxy": [
+     0.5649,
+     0.1302,
+     0.6157,
+     0.1543
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.154,
+    "xyxy": [
+     0.6004,
+     0.1316,
+     0.6376,
+     0.1595
+    ]
+   }
+  ],
+  "20261119_124322_f002.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.826,
+    "xyxy": [
+     0.6757,
+     0.2966,
+     0.8156,
+     0.3725
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.276,
+    "xyxy": [
+     0.635,
+     0.1605,
+     0.6898,
+     0.1872
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.265,
+    "xyxy": [
+     0.5903,
+     0.32,
+     0.6931,
+     0.3811
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.245,
+    "xyxy": [
+     0.6709,
+     0.1627,
+     0.7123,
+     0.1928
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.204,
+    "xyxy": [
+     0.6767,
+     0.3382,
+     0.776,
+     0.4195
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.202,
+    "xyxy": [
+     0.0002,
+     0.12,
+     0.9798,
+     0.854
+    ]
+   },
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.177,
+    "xyxy": [
+     0.3497,
+     0.3637,
+     0.7104,
+     0.465
+    ]
+   }
+  ],
+  "20261119_124322_f003.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.658,
+    "xyxy": [
+     0.8011,
+     0.3851,
+     0.9941,
+     0.4949
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.42,
+    "xyxy": [
+     0.6786,
+     0.409,
+     0.8335,
+     0.5029
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.336,
+    "xyxy": [
+     0.712,
+     0.1759,
+     0.7595,
+     0.2106
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.311,
+    "xyxy": [
+     0.6708,
+     0.1743,
+     0.7311,
+     0.204
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.184,
+    "xyxy": [
+     0.0,
+     0.2025,
+     0.9963,
+     0.8965
+    ]
+   }
+  ],
+  "20261119_124322_f004.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.592,
+    "xyxy": [
+     0.8189,
+     0.5688,
+     0.9991,
+     0.7081
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.499,
+    "xyxy": [
+     0.6384,
+     0.1822,
+     0.718,
+     0.2157
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.418,
+    "xyxy": [
+     0.6854,
+     0.1867,
+     0.7378,
+     0.2234
+    ]
+   },
+   {
+    "prompt": "construction barrier",
+    "classe": "obstaculo",
+    "conf": 0.357,
+    "xyxy": [
+     0.3746,
+     0.6797,
+     0.9985,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.235,
+    "xyxy": [
+     0.0,
+     0.2742,
+     0.9964,
+     0.9982
+    ]
+   }
+  ],
+  "20261119_124322_f005.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.297,
+    "xyxy": [
+     0.0166,
+     0.0014,
+     0.9182,
+     0.6785
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.288,
+    "xyxy": [
+     0.6535,
+     0.0386,
+     0.7173,
+     0.0901
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.265,
+    "xyxy": [
+     0.0,
+     0.3084,
+     0.9989,
+     0.9991
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.168,
+    "xyxy": [
+     0.5947,
+     0.0376,
+     0.6786,
+     0.0803
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.155,
+    "xyxy": [
+     0.5836,
+     0.7406,
+     0.7185,
+     0.7985
+    ]
+   }
+  ],
+  "20261119_124322_f006.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.403,
+    "xyxy": [
+     0.2222,
+     0.0,
+     0.9985,
+     0.6865
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.247,
+    "xyxy": [
+     0.0008,
+     0.3056,
+     0.9972,
+     0.999
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.223,
+    "xyxy": [
+     0.3093,
+     0.8517,
+     0.4958,
+     1.0
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.189,
+    "xyxy": [
+     0.5807,
+     0.6459,
+     0.8052,
+     0.7871
+    ]
+   }
+  ],
+  "20261119_124322_f007.jpg": [
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.681,
+    "xyxy": [
+     0.0077,
+     0.914,
+     0.4828,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.284,
+    "xyxy": [
+     0.0087,
+     0.0008,
+     0.9988,
+     0.6519
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.242,
+    "xyxy": [
+     0.8838,
+     0.8638,
+     0.999,
+     1.0
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.224,
+    "xyxy": [
+     0.0041,
+     0.2296,
+     0.9951,
+     0.9984
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.213,
+    "xyxy": [
+     0.3785,
+     0.7215,
+     0.6068,
+     0.9044
+    ]
+   }
+  ],
+  "20261119_124322_f008.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.39,
+    "xyxy": [
+     0.0,
+     0.0311,
+     0.9921,
+     0.7625
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.206,
+    "xyxy": [
+     0.6263,
+     0.1732,
+     0.7256,
+     0.2447
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.187,
+    "xyxy": [
+     0.5333,
+     0.1635,
+     0.662,
+     0.2241
+    ]
+   }
+  ],
+  "20261119_124322_f009.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.554,
+    "xyxy": [
+     0.7071,
+     0.29,
+     0.8581,
+     0.3616
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.403,
+    "xyxy": [
+     0.8263,
+     0.3247,
+     0.9534,
+     0.393
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.318,
+    "xyxy": [
+     0.0,
+     0.1376,
+     0.9922,
+     0.837
+    ]
+   }
+  ],
+  "20261119_124322_f010.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.828,
+    "xyxy": [
+     0.2604,
+     0.3452,
+     0.4154,
+     0.4317
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.749,
+    "xyxy": [
+     0.0972,
+     0.3137,
+     0.2736,
+     0.4124
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.485,
+    "xyxy": [
+     0.0,
+     0.356,
+     0.9874,
+     0.9994
+    ]
+   }
+  ],
+  "20261119_124322_f011.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.66,
+    "xyxy": [
+     0.0591,
+     0.3882,
+     0.2882,
+     0.5167
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.601,
+    "xyxy": [
+     0.2644,
+     0.4469,
+     0.4619,
+     0.5672
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.204,
+    "xyxy": [
+     0.3295,
+     0.8449,
+     0.6166,
+     1.0
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.195,
+    "xyxy": [
+     0.0977,
+     0.4398,
+     0.9998,
+     0.9999
+    ]
+   }
+  ],
+  "20261119_124322_f012.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.735,
+    "xyxy": [
+     0.7001,
+     0.7733,
+     0.998,
+     1.0
+    ]
+   },
+   {
+    "prompt": "construction barrier",
+    "classe": "obstaculo",
+    "conf": 0.264,
+    "xyxy": [
+     0.4996,
+     0.0001,
+     1.0,
+     0.5394
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.167,
+    "xyxy": [
+     0.071,
+     0.0001,
+     0.1509,
+     0.0536
+    ]
+   }
+  ],
+  "20261119_124322_f013.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.211,
+    "xyxy": [
+     0.0,
+     0.1682,
+     0.9988,
+     0.9251
+    ]
+   }
+  ],
+  "20261119_124322_f014.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.207,
+    "xyxy": [
+     0.0,
+     0.2602,
+     0.6315,
+     0.936
+    ]
+   }
+  ],
+  "20261119_124322_f015.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.242,
+    "xyxy": [
+     0.0,
+     0.108,
+     0.9905,
+     0.8092
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.224,
+    "xyxy": [
+     0.0,
+     0.3685,
+     0.9568,
+     0.9998
+    ]
+   }
+  ],
+  "20261119_124322_f016.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.454,
+    "xyxy": [
+     0.0001,
+     0.0306,
+     0.9974,
+     0.671
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.379,
+    "xyxy": [
+     0.0008,
+     0.1088,
+     0.0767,
+     0.1335
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.201,
+    "xyxy": [
+     0.0031,
+     0.3557,
+     1.0,
+     0.9995
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.194,
+    "xyxy": [
+     0.2793,
+     0.7143,
+     1.0,
+     0.8506
+    ]
+   }
+  ],
+  "20261119_124322_f017.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.473,
+    "xyxy": [
+     0.0013,
+     0.2671,
+     0.9995,
+     0.9293
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.432,
+    "xyxy": [
+     0.0009,
+     0.0998,
+     0.0647,
+     0.1327
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.196,
+    "xyxy": [
+     0.001,
+     0.0136,
+     1.0,
+     0.7037
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.191,
+    "xyxy": [
+     0.0202,
+     0.0037,
+     0.9948,
+     0.3051
+    ]
+   }
+  ],
+  "20261119_124322_f018.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.671,
+    "xyxy": [
+     0.0,
+     0.3624,
+     1.0,
+     0.9991
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.493,
+    "xyxy": [
+     0.0372,
+     0.0582,
+     0.179,
+     0.1025
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.343,
+    "xyxy": [
+     0.0247,
+     0.0003,
+     0.9991,
+     0.3689
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.23,
+    "xyxy": [
+     0.0,
+     0.0001,
+     0.9988,
+     0.7401
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.198,
+    "xyxy": [
+     0.1842,
+     0.0,
+     0.4635,
+     0.1943
+    ]
+   }
+  ],
+  "20261119_124322_f019.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.378,
+    "xyxy": [
+     0.0,
+     0.7261,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.2,
+    "xyxy": [
+     0.0,
+     0.3163,
+     1.0,
+     0.9969
+    ]
+   }
+  ],
+  "20261119_124322_f020.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.216,
+    "xyxy": [
+     0.0,
+     0.1402,
+     0.993,
+     0.9465
+    ]
+   }
+  ],
+  "20261119_124346_f001.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.329,
+    "xyxy": [
+     0.2825,
+     0.0,
+     0.3475,
+     0.0233
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.247,
+    "xyxy": [
+     0.0,
+     0.3696,
+     0.9966,
+     0.9998
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.178,
+    "xyxy": [
+     0.104,
+     0.017,
+     0.773,
+     0.2571
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.163,
+    "xyxy": [
+     0.2354,
+     0.0591,
+     0.3117,
+     0.0873
+    ]
+   }
+  ],
+  "20261119_124346_f002.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.36,
+    "xyxy": [
+     0.2969,
+     0.0,
+     0.3613,
+     0.025
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.188,
+    "xyxy": [
+     0.1067,
+     0.0137,
+     0.8135,
+     0.2845
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.163,
+    "xyxy": [
+     0.1111,
+     0.0893,
+     0.3241,
+     0.2273
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.158,
+    "xyxy": [
+     0.0,
+     0.001,
+     0.9997,
+     0.6934
+    ]
+   }
+  ],
+  "20261119_124346_f003.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.523,
+    "xyxy": [
+     0.0,
+     0.3663,
+     0.9993,
+     0.9995
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.301,
+    "xyxy": [
+     0.0465,
+     0.0028,
+     0.9198,
+     0.3417
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.189,
+    "xyxy": [
+     0.0,
+     0.0059,
+     0.9961,
+     0.7363
+    ]
+   }
+  ],
+  "20261119_124346_f004.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.358,
+    "xyxy": [
+     0.0035,
+     0.0008,
+     0.9983,
+     0.4346
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.306,
+    "xyxy": [
+     0.0,
+     0.446,
+     0.9958,
+     0.999
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.287,
+    "xyxy": [
+     0.2493,
+     0.0378,
+     0.3433,
+     0.075
+    ]
+   }
+  ],
+  "20261119_124346_f005.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.441,
+    "xyxy": [
+     0.0189,
+     0.6811,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.379,
+    "xyxy": [
+     0.2426,
+     0.037,
+     0.3554,
+     0.0798
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.197,
+    "xyxy": [
+     0.0364,
+     0.6812,
+     0.9981,
+     0.8048
+    ]
+   }
+  ],
+  "20261119_124346_f006.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.391,
+    "xyxy": [
+     0.2267,
+     0.0347,
+     0.3544,
+     0.0874
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.251,
+    "xyxy": [
+     0.2092,
+     0.0157,
+     0.268,
+     0.0817
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.197,
+    "xyxy": [
+     0.0149,
+     0.2056,
+     0.9986,
+     0.9873
+    ]
+   }
+  ],
+  "20261119_124346_f007.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.581,
+    "xyxy": [
+     0.1889,
+     0.0676,
+     0.3318,
+     0.1329
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.205,
+    "xyxy": [
+     0.2219,
+     0.3427,
+     1.0,
+     0.9998
+    ]
+   }
+  ],
+  "20261119_124346_f008.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.54,
+    "xyxy": [
+     0.1374,
+     0.1984,
+     0.318,
+     0.2764
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.304,
+    "xyxy": [
+     0.1121,
+     0.167,
+     0.224,
+     0.256
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.209,
+    "xyxy": [
+     0.0035,
+     0.0031,
+     0.9917,
+     0.7014
+    ]
+   }
+  ],
+  "20261119_124346_f009.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.477,
+    "xyxy": [
+     0.0009,
+     0.3213,
+     0.2289,
+     0.4314
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.282,
+    "xyxy": [
+     0.004,
+     0.0324,
+     1.0,
+     0.7745
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.265,
+    "xyxy": [
+     0.0015,
+     0.27,
+     0.1113,
+     0.3536
+    ]
+   }
+  ],
+  "20261119_124346_f010.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.742,
+    "xyxy": [
+     0.0018,
+     0.6082,
+     0.077,
+     0.7743
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.268,
+    "xyxy": [
+     0.1681,
+     0.0014,
+     1.0,
+     0.6241
+    ]
+   },
+   {
+    "prompt": "rubble",
+    "classe": "obstaculo",
+    "conf": 0.162,
+    "xyxy": [
+     0.0021,
+     0.6186,
+     0.7695,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124346_f011.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.276,
+    "xyxy": [
+     0.5887,
+     0.8113,
+     0.7359,
+     0.9584
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.224,
+    "xyxy": [
+     0.5718,
+     0.6915,
+     0.6994,
+     0.8069
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.208,
+    "xyxy": [
+     0.0145,
+     0.001,
+     0.9963,
+     0.6634
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.202,
+    "xyxy": [
+     0.1019,
+     0.202,
+     0.9747,
+     0.994
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.192,
+    "xyxy": [
+     0.455,
+     0.8848,
+     0.6103,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.177,
+    "xyxy": [
+     0.5211,
+     0.0053,
+     0.9965,
+     0.7258
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.151,
+    "xyxy": [
+     0.6146,
+     0.9654,
+     0.7652,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124346_f012.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.332,
+    "xyxy": [
+     0.3069,
+     0.0,
+     0.4464,
+     0.0564
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.211,
+    "xyxy": [
+     0.0043,
+     0.0085,
+     0.9993,
+     0.6822
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.198,
+    "xyxy": [
+     0.1702,
+     0.2669,
+     0.9885,
+     0.9971
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.158,
+    "xyxy": [
+     0.6669,
+     0.5121,
+     0.7714,
+     0.5846
+    ]
+   }
+  ],
+  "20261119_124346_f013.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.714,
+    "xyxy": [
+     0.2588,
+     0.0,
+     0.432,
+     0.0896
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.601,
+    "xyxy": [
+     0.3593,
+     0.0163,
+     0.5373,
+     0.1064
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.26,
+    "xyxy": [
+     0.9056,
+     0.0699,
+     0.9996,
+     0.2126
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.242,
+    "xyxy": [
+     0.3919,
+     0.2828,
+     1.0,
+     0.9972
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.191,
+    "xyxy": [
+     0.2612,
+     0.7602,
+     0.4133,
+     0.9014
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.187,
+    "xyxy": [
+     0.5204,
+     0.0435,
+     0.7622,
+     0.0798
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.161,
+    "xyxy": [
+     0.2955,
+     0.6507,
+     0.4283,
+     0.7606
+    ]
+   }
+  ],
+  "20261119_124346_f014.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.869,
+    "xyxy": [
+     0.1182,
+     0.0144,
+     0.3519,
+     0.1884
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.78,
+    "xyxy": [
+     0.2531,
+     0.0824,
+     0.4967,
+     0.2091
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.21,
+    "xyxy": [
+     0.1948,
+     0.2579,
+     0.996,
+     0.9887
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.208,
+    "xyxy": [
+     0.0126,
+     0.0011,
+     0.9993,
+     0.7183
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.202,
+    "xyxy": [
+     0.3,
+     0.8233,
+     0.4508,
+     0.9965
+    ]
+   }
+  ],
+  "20261119_124346_f015.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.84,
+    "xyxy": [
+     0.0024,
+     0.2633,
+     0.387,
+     0.4418
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.548,
+    "xyxy": [
+     0.0015,
+     0.1784,
+     0.173,
+     0.4073
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.461,
+    "xyxy": [
+     0.1861,
+     0.5082,
+     0.9979,
+     1.0
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.344,
+    "xyxy": [
+     0.0,
+     0.0051,
+     0.9991,
+     0.723
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.219,
+    "xyxy": [
+     0.2203,
+     0.7047,
+     0.352,
+     0.8479
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.197,
+    "xyxy": [
+     0.2045,
+     0.8496,
+     0.3613,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.168,
+    "xyxy": [
+     0.0021,
+     0.1904,
+     0.1583,
+     0.3098
+    ]
+   }
+  ],
+  "20261119_124419_f001.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.24,
+    "xyxy": [
+     0.4286,
+     0.0,
+     0.6192,
+     0.2194
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.176,
+    "xyxy": [
+     0.0,
+     0.3797,
+     0.9992,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.156,
+    "xyxy": [
+     0.0016,
+     0.0,
+     0.9927,
+     0.6837
+    ]
+   }
+  ],
+  "20261119_124419_f002.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.316,
+    "xyxy": [
+     0.0005,
+     0.4597,
+     1.0,
+     0.9999
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.297,
+    "xyxy": [
+     0.0046,
+     0.0158,
+     0.9986,
+     0.7697
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.232,
+    "xyxy": [
+     0.5567,
+     0.0,
+     0.7828,
+     0.2342
+    ]
+   }
+  ],
+  "20261119_124419_f003.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.302,
+    "xyxy": [
+     0.0,
+     0.3804,
+     0.9993,
+     0.9995
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.158,
+    "xyxy": [
+     0.6196,
+     0.0,
+     0.9178,
+     0.317
+    ]
+   }
+  ],
+  "20261119_124419_f004.jpg": [],
+  "20261119_124419_f005.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.16,
+    "xyxy": [
+     0.0012,
+     0.2395,
+     0.9986,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124419_f006.jpg": [],
+  "20261119_124457_f001.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.761,
+    "xyxy": [
+     0.209,
+     0.0925,
+     0.3216,
+     0.1527
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.256,
+    "xyxy": [
+     0.005,
+     0.0096,
+     0.9971,
+     0.6949
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.226,
+    "xyxy": [
+     0.0,
+     0.3867,
+     0.9996,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124457_f002.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.84,
+    "xyxy": [
+     0.1114,
+     0.1215,
+     0.2504,
+     0.1963
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.202,
+    "xyxy": [
+     0.0033,
+     0.6123,
+     0.9992,
+     0.9991
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.183,
+    "xyxy": [
+     0.0018,
+     0.1459,
+     0.998,
+     0.9071
+    ]
+   }
+  ],
+  "20261119_124457_f003.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.84,
+    "xyxy": [
+     0.0661,
+     0.1495,
+     0.2413,
+     0.2439
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.3,
+    "xyxy": [
+     0.6728,
+     0.9224,
+     0.9973,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.262,
+    "xyxy": [
+     0.0,
+     0.0114,
+     0.9992,
+     0.7352
+    ]
+   }
+  ],
+  "20261119_124457_f004.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.518,
+    "xyxy": [
+     0.0015,
+     0.2839,
+     0.0971,
+     0.4151
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.329,
+    "xyxy": [
+     0.0157,
+     0.0394,
+     0.9986,
+     0.8514
+    ]
+   }
+  ],
+  "20261119_124457_f005.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.532,
+    "xyxy": [
+     0.0,
+     0.2583,
+     1.0,
+     0.9964
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.216,
+    "xyxy": [
+     0.4122,
+     0.9387,
+     0.6948,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124457_f006.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.462,
+    "xyxy": [
+     0.0001,
+     0.2775,
+     0.9975,
+     0.999
+    ]
+   },
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.326,
+    "xyxy": [
+     0.4232,
+     0.0,
+     0.4731,
+     0.0171
+    ]
+   }
+  ],
+  "20261119_124457_f007.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.621,
+    "xyxy": [
+     0.0,
+     0.3547,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.157,
+    "xyxy": [
+     0.0,
+     0.0519,
+     0.9991,
+     0.8049
+    ]
+   }
+  ],
+  "20261119_124457_f008.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.599,
+    "xyxy": [
+     0.0008,
+     0.3191,
+     0.9975,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.477,
+    "xyxy": [
+     0.0028,
+     0.0012,
+     1.0,
+     0.6483
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.206,
+    "xyxy": [
+     0.7451,
+     0.7881,
+     0.9911,
+     0.8615
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.167,
+    "xyxy": [
+     0.4687,
+     0.0,
+     0.5269,
+     0.0414
+    ]
+   }
+  ],
+  "20261119_124457_f009.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.325,
+    "xyxy": [
+     0.466,
+     0.0,
+     0.5305,
+     0.0104
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.213,
+    "xyxy": [
+     0.0,
+     0.3207,
+     0.997,
+     1.0
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.18,
+    "xyxy": [
+     0.6369,
+     0.7905,
+     0.8867,
+     0.8553
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.151,
+    "xyxy": [
+     0.0,
+     0.9103,
+     0.0946,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124457_f010.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.33,
+    "xyxy": [
+     0.0,
+     0.3199,
+     1.0,
+     0.9963
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.191,
+    "xyxy": [
+     0.0036,
+     0.0025,
+     0.9997,
+     0.5285
+    ]
+   }
+  ],
+  "20261119_124457_f011.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.231,
+    "xyxy": [
+     0.0,
+     0.2656,
+     1.0,
+     0.9961
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.201,
+    "xyxy": [
+     0.3509,
+     0.1279,
+     0.6034,
+     0.1624
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.174,
+    "xyxy": [
+     0.0009,
+     0.0005,
+     1.0,
+     0.6459
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.166,
+    "xyxy": [
+     0.4905,
+     0.0,
+     0.5732,
+     0.0735
+    ]
+   }
+  ],
+  "20261119_124457_f012.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.516,
+    "xyxy": [
+     0.0,
+     0.0009,
+     0.9968,
+     0.6564
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.416,
+    "xyxy": [
+     0.0,
+     0.277,
+     0.995,
+     0.9957
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.271,
+    "xyxy": [
+     0.3185,
+     0.1523,
+     0.6312,
+     0.2053
+    ]
+   }
+  ],
+  "20261119_124457_f013.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.496,
+    "xyxy": [
+     0.3004,
+     0.2264,
+     0.8606,
+     0.3785
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.298,
+    "xyxy": [
+     0.0044,
+     0.2048,
+     0.9985,
+     0.9067
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.269,
+    "xyxy": [
+     0.4872,
+     0.0407,
+     0.5933,
+     0.1057
+    ]
+   }
+  ],
+  "20261119_124457_f014.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.732,
+    "xyxy": [
+     0.349,
+     0.4112,
+     0.9972,
+     0.6231
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.473,
+    "xyxy": [
+     0.0,
+     0.0005,
+     0.9985,
+     0.6405
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.457,
+    "xyxy": [
+     0.5816,
+     0.1229,
+     0.7117,
+     0.2029
+    ]
+   }
+  ],
+  "20261119_124457_f015.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.765,
+    "xyxy": [
+     0.6693,
+     0.2157,
+     0.85,
+     0.3248
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.751,
+    "xyxy": [
+     0.3409,
+     0.7977,
+     0.9998,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.482,
+    "xyxy": [
+     0.0048,
+     0.0024,
+     1.0,
+     0.7358
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.219,
+    "xyxy": [
+     0.6677,
+     0.0,
+     0.9217,
+     0.3252
+    ]
+   }
+  ],
+  "20261119_124457_f016.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.22,
+    "xyxy": [
+     0.0027,
+     0.0046,
+     1.0,
+     0.7385
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.162,
+    "xyxy": [
+     0.0,
+     0.2548,
+     0.9992,
+     0.9985
+    ]
+   }
+  ],
+  "20261119_124457_f017.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.356,
+    "xyxy": [
+     0.0007,
+     0.3543,
+     0.9934,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124529_f001.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.231,
+    "xyxy": [
+     0.0012,
+     0.3169,
+     1.0,
+     0.9999
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.185,
+    "xyxy": [
+     0.743,
+     0.8643,
+     0.9972,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.16,
+    "xyxy": [
+     0.2855,
+     0.0,
+     0.323,
+     0.0364
+    ]
+   }
+  ],
+  "20261119_124529_f002.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.216,
+    "xyxy": [
+     0.8794,
+     0.4412,
+     0.9598,
+     0.5394
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.2,
+    "xyxy": [
+     0.3452,
+     0.1816,
+     0.3825,
+     0.2175
+    ]
+   }
+  ],
+  "20261119_124529_f003.jpg": [
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.191,
+    "xyxy": [
+     0.3603,
+     0.2289,
+     0.3975,
+     0.2657
+    ]
+   }
+  ],
+  "20261119_124529_f004.jpg": [
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.3,
+    "xyxy": [
+     0.4251,
+     0.2252,
+     0.4654,
+     0.2655
+    ]
+   }
+  ],
+  "20261119_124529_f005.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.35,
+    "xyxy": [
+     0.0559,
+     0.3088,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.189,
+    "xyxy": [
+     0.5196,
+     0.2145,
+     0.5682,
+     0.2563
+    ]
+   }
+  ],
+  "20261119_124529_f006.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.572,
+    "xyxy": [
+     0.0,
+     0.3681,
+     1.0,
+     0.9974
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.157,
+    "xyxy": [
+     0.3668,
+     0.2171,
+     0.4263,
+     0.2597
+    ]
+   }
+  ],
+  "20261119_124529_f007.jpg": [],
+  "20261119_124529_f008.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.203,
+    "xyxy": [
+     0.0016,
+     0.2385,
+     1.0,
+     0.9753
+    ]
+   }
+  ],
+  "20261119_124529_f009.jpg": [],
+  "20261119_124529_f010.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.232,
+    "xyxy": [
+     0.5812,
+     0.2317,
+     0.5983,
+     0.2633
+    ]
+   }
+  ],
+  "20261119_124529_f011.jpg": [],
+  "20261119_124529_f012.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.306,
+    "xyxy": [
+     0.5124,
+     0.2525,
+     0.5362,
+     0.2849
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.159,
+    "xyxy": [
+     0.3477,
+     0.2601,
+     0.383,
+     0.275
+    ]
+   }
+  ],
+  "20261119_124529_f013.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.183,
+    "xyxy": [
+     0.5484,
+     0.2544,
+     0.5679,
+     0.2899
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.155,
+    "xyxy": [
+     0.2932,
+     0.2839,
+     0.377,
+     0.3213
+    ]
+   }
+  ],
+  "20261119_124529_f014.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.258,
+    "xyxy": [
+     0.5786,
+     0.2561,
+     0.6009,
+     0.2956
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.199,
+    "xyxy": [
+     0.5655,
+     0.2392,
+     0.5788,
+     0.2709
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.177,
+    "xyxy": [
+     0.0001,
+     0.257,
+     1.0,
+     0.931
+    ]
+   }
+  ],
+  "20261119_124529_f015.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.348,
+    "xyxy": [
+     0.365,
+     0.3057,
+     0.5042,
+     0.3732
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.218,
+    "xyxy": [
+     0.0005,
+     0.3478,
+     0.9999,
+     1.0
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.212,
+    "xyxy": [
+     0.7019,
+     0.2363,
+     0.7179,
+     0.2707
+    ]
+   },
+   {
+    "prompt": "pothole",
+    "classe": "buraco",
+    "conf": 0.181,
+    "xyxy": [
+     0.8005,
+     0.3818,
+     0.8725,
+     0.3957
+    ]
+   }
+  ],
+  "20261119_124529_f016.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.277,
+    "xyxy": [
+     0.201,
+     0.3115,
+     0.4214,
+     0.4163
+    ]
+   },
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.176,
+    "xyxy": [
+     0.648,
+     0.2253,
+     0.6692,
+     0.2638
+    ]
+   },
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.174,
+    "xyxy": [
+     0.4957,
+     0.1883,
+     0.5216,
+     0.2088
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.152,
+    "xyxy": [
+     0.0037,
+     0.2507,
+     1.0,
+     0.9405
+    ]
+   }
+  ],
+  "20261119_124529_f017.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.264,
+    "xyxy": [
+     0.6344,
+     0.2249,
+     0.6547,
+     0.2681
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.18,
+    "xyxy": [
+     0.3814,
+     0.2557,
+     0.4404,
+     0.2802
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.179,
+    "xyxy": [
+     0.8862,
+     0.5222,
+     0.9991,
+     0.5466
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.168,
+    "xyxy": [
+     0.002,
+     0.3352,
+     0.3698,
+     0.5242
+    ]
+   }
+  ],
+  "20261119_124529_f018.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.211,
+    "xyxy": [
+     0.2558,
+     0.2084,
+     0.9976,
+     0.9734
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.153,
+    "xyxy": [
+     0.0021,
+     0.9214,
+     0.2622,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124604_f001.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.594,
+    "xyxy": [
+     0.7236,
+     0.1971,
+     0.9555,
+     0.3508
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.327,
+    "xyxy": [
+     0.0,
+     0.0343,
+     0.9917,
+     0.7363
+    ]
+   },
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.311,
+    "xyxy": [
+     0.1141,
+     0.0246,
+     0.1495,
+     0.0546
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.292,
+    "xyxy": [
+     0.0,
+     0.3817,
+     0.998,
+     1.0
+    ]
+   },
+   {
+    "prompt": "construction barrier",
+    "classe": "obstaculo",
+    "conf": 0.28,
+    "xyxy": [
+     0.5151,
+     0.0,
+     0.5705,
+     0.0326
+    ]
+   },
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.269,
+    "xyxy": [
+     0.7557,
+     0.1406,
+     0.9277,
+     0.2055
+    ]
+   }
+  ],
+  "20261119_124604_f002.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.714,
+    "xyxy": [
+     0.696,
+     0.2609,
+     0.9986,
+     0.4611
+    ]
+   },
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.368,
+    "xyxy": [
+     0.0295,
+     0.0235,
+     0.0671,
+     0.056
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.246,
+    "xyxy": [
+     0.6142,
+     0.5735,
+     0.9984,
+     0.9825
+    ]
+   },
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.221,
+    "xyxy": [
+     0.8706,
+     0.1058,
+     0.9746,
+     0.181
+    ]
+   },
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.201,
+    "xyxy": [
+     0.4376,
+     0.0,
+     0.4963,
+     0.0299
+    ]
+   }
+  ],
+  "20261119_124604_f003.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.819,
+    "xyxy": [
+     0.7455,
+     0.4479,
+     0.9993,
+     0.7355
+    ]
+   },
+   {
+    "prompt": "traffic cone",
+    "classe": "obstaculo",
+    "conf": 0.558,
+    "xyxy": [
+     0.3909,
+     0.0253,
+     0.451,
+     0.0867
+    ]
+   },
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.252,
+    "xyxy": [
+     0.001,
+     0.0675,
+     0.0147,
+     0.1016
+    ]
+   },
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.232,
+    "xyxy": [
+     0.7497,
+     0.3893,
+     0.996,
+     0.5065
+    ]
+   },
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.193,
+    "xyxy": [
+     0.7542,
+     0.3004,
+     0.963,
+     0.3962
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.189,
+    "xyxy": [
+     0.0107,
+     0.0724,
+     0.997,
+     0.3311
+    ]
+   }
+  ],
+  "20261119_124604_f004.jpg": [
+   {
+    "prompt": "traffic cone",
+    "classe": "obstaculo",
+    "conf": 0.68,
+    "xyxy": [
+     0.1549,
+     0.0395,
+     0.2224,
+     0.105
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.463,
+    "xyxy": [
+     0.0,
+     0.0841,
+     1.0,
+     0.4558
+    ]
+   },
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.243,
+    "xyxy": [
+     0.8417,
+     0.4632,
+     0.9989,
+     0.687
+    ]
+   },
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.187,
+    "xyxy": [
+     0.9384,
+     0.6145,
+     1.0,
+     0.7916
+    ]
+   }
+  ],
+  "20261119_124604_f005.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.479,
+    "xyxy": [
+     0.0,
+     0.2758,
+     1.0,
+     0.9067
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.247,
+    "xyxy": [
+     0.6144,
+     0.4635,
+     0.7443,
+     0.5113
+    ]
+   }
+  ],
+  "20261119_124604_f006.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.602,
+    "xyxy": [
+     0.591,
+     0.7271,
+     0.8043,
+     0.8162
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.381,
+    "xyxy": [
+     0.0979,
+     0.102,
+     1.0,
+     0.5871
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.323,
+    "xyxy": [
+     0.0001,
+     0.3055,
+     0.9957,
+     0.9344
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.176,
+    "xyxy": [
+     0.2902,
+     0.2297,
+     0.6867,
+     0.2867
+    ]
+   }
+  ],
+  "20261119_124604_f007.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.24,
+    "xyxy": [
+     0.8699,
+     0.343,
+     0.9771,
+     0.3774
+    ]
+   }
+  ],
+  "20261119_124604_f008.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.383,
+    "xyxy": [
+     0.739,
+     0.5172,
+     0.8698,
+     0.5657
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.156,
+    "xyxy": [
+     0.0177,
+     0.2582,
+     0.9985,
+     0.9387
+    ]
+   }
+  ],
+  "20261119_124604_f009.jpg": [],
+  "20261119_124604_f010.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.17,
+    "xyxy": [
+     0.0682,
+     0.0588,
+     0.1979,
+     0.1144
+    ]
+   }
+  ],
+  "20261119_124604_f011.jpg": [],
+  "20261119_124604_f012.jpg": [],
+  "20261119_124604_f013.jpg": [],
+  "20261119_124604_f014.jpg": [],
+  "20261119_124604_f015.jpg": [],
+  "20261119_124604_f016.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.292,
+    "xyxy": [
+     0.0008,
+     0.2037,
+     0.0813,
+     0.2662
+    ]
+   }
+  ],
+  "20261119_124604_f017.jpg": [],
+  "20261119_124604_f018.jpg": [],
+  "20261119_124604_f019.jpg": [],
+  "20261119_124728_f001.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.574,
+    "xyxy": [
+     0.7143,
+     0.1875,
+     0.7646,
+     0.2266
+    ]
+   }
+  ],
+  "20261119_124728_f002.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.495,
+    "xyxy": [
+     0.8511,
+     0.171,
+     0.9043,
+     0.2085
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.278,
+    "xyxy": [
+     0.0,
+     0.373,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124728_f003.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.362,
+    "xyxy": [
+     0.4632,
+     0.0006,
+     0.5763,
+     0.4356
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.163,
+    "xyxy": [
+     0.0,
+     0.4982,
+     0.9947,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124728_f004.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.604,
+    "xyxy": [
+     0.8519,
+     0.2992,
+     0.9149,
+     0.3616
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.27,
+    "xyxy": [
+     0.4404,
+     0.0004,
+     0.5918,
+     0.5054
+    ]
+   },
+   {
+    "prompt": "utility pole",
+    "classe": "obstaculo",
+    "conf": 0.163,
+    "xyxy": [
+     0.737,
+     0.0,
+     0.8002,
+     0.1838
+    ]
+   }
+  ],
+  "20261119_124728_f005.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.25,
+    "xyxy": [
+     0.6699,
+     0.0007,
+     0.8801,
+     0.6055
+    ]
+   }
+  ],
+  "20261119_124728_f006.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.191,
+    "xyxy": [
+     0.5747,
+     0.0874,
+     0.8665,
+     0.3952
+    ]
+   }
+  ],
+  "20261119_124728_f007.jpg": [],
+  "20261119_124728_f008.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.171,
+    "xyxy": [
+     0.2564,
+     0.0884,
+     0.5479,
+     0.4272
+    ]
+   }
+  ],
+  "20261119_124728_f009.jpg": [],
+  "20261119_124728_f010.jpg": [],
+  "20261119_124728_f011.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.465,
+    "xyxy": [
+     0.0004,
+     0.4401,
+     0.9967,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124728_f012.jpg": [],
+  "20261119_124728_f013.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.19,
+    "xyxy": [
+     0.0,
+     0.4113,
+     0.9993,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124728_f014.jpg": [],
+  "20261119_124907_f001.jpg": [
+   {
+    "prompt": "bollard",
+    "classe": "obstaculo",
+    "conf": 0.271,
+    "xyxy": [
+     0.8217,
+     0.0021,
+     0.9996,
+     0.383
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.16,
+    "xyxy": [
+     0.0,
+     0.2587,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_124907_f002.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.162,
+    "xyxy": [
+     0.0023,
+     0.6126,
+     0.3412,
+     0.8752
+    ]
+   }
+  ],
+  "20261119_124907_f003.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.243,
+    "xyxy": [
+     0.3426,
+     0.3287,
+     0.4025,
+     0.3935
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.171,
+    "xyxy": [
+     0.0042,
+     0.4023,
+     0.8201,
+     0.9988
+    ]
+   }
+  ],
+  "20261119_124907_f004.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.368,
+    "xyxy": [
+     0.6626,
+     0.4639,
+     0.7981,
+     0.4945
+    ]
+   }
+  ],
+  "20261119_124907_f005.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.634,
+    "xyxy": [
+     0.7053,
+     0.4647,
+     0.9526,
+     0.5155
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.431,
+    "xyxy": [
+     0.2747,
+     0.4911,
+     0.6489,
+     0.6163
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.151,
+    "xyxy": [
+     0.0049,
+     0.4536,
+     0.9994,
+     0.9991
+    ]
+   }
+  ],
+  "20261119_124907_f006.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.611,
+    "xyxy": [
+     0.2217,
+     0.1712,
+     0.3081,
+     0.2466
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.171,
+    "xyxy": [
+     0.0011,
+     0.5551,
+     0.9996,
+     0.9997
+    ]
+   }
+  ],
+  "20261119_124907_f007.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.921,
+    "xyxy": [
+     0.1545,
+     0.8043,
+     0.9995,
+     1.0
+    ]
+   },
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.851,
+    "xyxy": [
+     0.0339,
+     0.1615,
+     0.1621,
+     0.2655
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.219,
+    "xyxy": [
+     0.008,
+     0.6065,
+     0.9967,
+     0.9994
+    ]
+   }
+  ],
+  "20261119_124907_f008.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.184,
+    "xyxy": [
+     0.0,
+     0.2563,
+     0.9972,
+     0.9984
+    ]
+   }
+  ],
+  "20261119_124907_f009.jpg": [],
+  "20261119_124907_f010.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.388,
+    "xyxy": [
+     0.0,
+     0.3109,
+     0.9993,
+     0.996
+    ]
+   }
+  ],
+  "20261119_124907_f011.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.331,
+    "xyxy": [
+     0.0019,
+     0.5407,
+     0.9967,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.278,
+    "xyxy": [
+     0.0026,
+     0.0013,
+     1.0,
+     0.6589
+    ]
+   }
+  ],
+  "20261119_125009_f001.jpg": [
+   {
+    "prompt": "construction barrier",
+    "classe": "obstaculo",
+    "conf": 0.238,
+    "xyxy": [
+     0.0716,
+     0.0538,
+     0.3255,
+     0.4778
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.152,
+    "xyxy": [
+     0.8489,
+     0.4396,
+     0.9991,
+     0.4993
+    ]
+   }
+  ],
+  "20261119_125009_f002.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.272,
+    "xyxy": [
+     0.1442,
+     0.5771,
+     0.2395,
+     0.5992
+    ]
+   },
+   {
+    "prompt": "construction barrier",
+    "classe": "obstaculo",
+    "conf": 0.248,
+    "xyxy": [
+     0.0,
+     0.0025,
+     0.3266,
+     0.5916
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.181,
+    "xyxy": [
+     0.513,
+     0.0011,
+     0.6951,
+     0.6516
+    ]
+   }
+  ],
+  "20261119_125009_f003.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.391,
+    "xyxy": [
+     0.011,
+     0.7056,
+     0.1464,
+     0.7394
+    ]
+   }
+  ],
+  "20261119_125009_f004.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.202,
+    "xyxy": [
+     0.0405,
+     0.4422,
+     0.7785,
+     0.999
+    ]
+   }
+  ],
+  "20261119_125009_f005.jpg": [],
+  "20261119_125009_f006.jpg": [],
+  "20261119_125009_f007.jpg": [],
+  "20261119_125009_f008.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.167,
+    "xyxy": [
+     0.3555,
+     0.0013,
+     0.546,
+     0.6459
+    ]
+   }
+  ],
+  "20261119_125009_f009.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.188,
+    "xyxy": [
+     0.0022,
+     0.4458,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125009_f010.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.229,
+    "xyxy": [
+     0.4615,
+     0.0659,
+     0.567,
+     0.4653
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.175,
+    "xyxy": [
+     0.4268,
+     0.46,
+     1.0,
+     0.9991
+    ]
+   }
+  ],
+  "20261119_125009_f011.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.328,
+    "xyxy": [
+     0.0,
+     0.4709,
+     0.9849,
+     0.9993
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.211,
+    "xyxy": [
+     0.3989,
+     0.0015,
+     0.5097,
+     0.5065
+    ]
+   }
+  ],
+  "20261119_125009_f012.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.217,
+    "xyxy": [
+     0.5266,
+     0.0006,
+     0.6661,
+     0.4863
+    ]
+   }
+  ],
+  "20261119_125009_f013.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.448,
+    "xyxy": [
+     0.0,
+     0.4473,
+     0.9996,
+     1.0
+    ]
+   },
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.349,
+    "xyxy": [
+     0.4552,
+     0.3613,
+     0.4753,
+     0.3847
+    ]
+   }
+  ],
+  "20261119_125009_f014.jpg": [],
+  "20261119_125009_f015.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.175,
+    "xyxy": [
+     0.3872,
+     0.0005,
+     0.5349,
+     0.5041
+    ]
+   }
+  ],
+  "20261119_125009_f016.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.162,
+    "xyxy": [
+     0.3287,
+     0.0001,
+     0.4775,
+     0.5351
+    ]
+   }
+  ],
+  "20261119_125009_f017.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.65,
+    "xyxy": [
+     0.3336,
+     0.3807,
+     0.4071,
+     0.4194
+    ]
+   }
+  ],
+  "20261119_125009_f018.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.823,
+    "xyxy": [
+     0.6664,
+     0.4068,
+     0.7797,
+     0.5299
+    ]
+   },
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.598,
+    "xyxy": [
+     0.4131,
+     0.3859,
+     0.4401,
+     0.4162
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.213,
+    "xyxy": [
+     0.4743,
+     0.0058,
+     0.6451,
+     0.6722
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.19,
+    "xyxy": [
+     0.2273,
+     0.0803,
+     0.3154,
+     0.4027
+    ]
+   }
+  ],
+  "20261119_125009_f019.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.375,
+    "xyxy": [
+     0.0,
+     0.2315,
+     0.6512,
+     0.9393
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.204,
+    "xyxy": [
+     0.6802,
+     0.114,
+     0.9992,
+     0.3688
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.176,
+    "xyxy": [
+     0.1487,
+     0.2702,
+     0.9918,
+     0.9974
+    ]
+   }
+  ],
+  "20261119_125031_f001.jpg": [
+   {
+    "prompt": "rubble",
+    "classe": "obstaculo",
+    "conf": 0.312,
+    "xyxy": [
+     0.0,
+     0.0047,
+     0.9983,
+     0.7617
+    ]
+   }
+  ],
+  "20261119_125031_f002.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.164,
+    "xyxy": [
+     0.0706,
+     0.389,
+     0.9984,
+     0.9973
+    ]
+   }
+  ],
+  "20261119_125031_f003.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.224,
+    "xyxy": [
+     0.0154,
+     0.4482,
+     0.9973,
+     1.0
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.215,
+    "xyxy": [
+     0.1691,
+     0.0018,
+     0.3033,
+     0.4454
+    ]
+   }
+  ],
+  "20261119_125031_f004.jpg": [
+   {
+    "prompt": "utility pole",
+    "classe": "obstaculo",
+    "conf": 0.151,
+    "xyxy": [
+     0.0332,
+     0.0001,
+     0.15,
+     0.444
+    ]
+   }
+  ],
+  "20261119_125031_f005.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.201,
+    "xyxy": [
+     0.0,
+     0.4293,
+     0.9986,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125031_f006.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.376,
+    "xyxy": [
+     0.8914,
+     0.9353,
+     0.9693,
+     0.9767
+    ]
+   }
+  ],
+  "20261119_125031_f007.jpg": [],
+  "20261119_125031_f008.jpg": [],
+  "20261119_125031_f009.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.18,
+    "xyxy": [
+     0.3534,
+     0.0,
+     0.496,
+     0.4605
+    ]
+   }
+  ],
+  "20261119_125031_f010.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.177,
+    "xyxy": [
+     0.295,
+     0.0003,
+     0.468,
+     0.5433
+    ]
+   }
+  ],
+  "20261119_125031_f011.jpg": [],
+  "20261119_125031_f012.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.22,
+    "xyxy": [
+     0.0936,
+     0.1206,
+     0.2916,
+     0.5632
+    ]
+   }
+  ],
+  "20261119_125031_f013.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.456,
+    "xyxy": [
+     0.0488,
+     0.0004,
+     0.2821,
+     0.6236
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.165,
+    "xyxy": [
+     0.1275,
+     0.5881,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125031_f014.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.266,
+    "xyxy": [
+     0.1899,
+     0.01,
+     0.465,
+     0.7162
+    ]
+   }
+  ],
+  "20261119_125031_f015.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.157,
+    "xyxy": [
+     0.409,
+     0.7236,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.15,
+    "xyxy": [
+     0.4192,
+     0.3417,
+     0.5197,
+     0.8876
+    ]
+   }
+  ],
+  "20261119_125031_f016.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.497,
+    "xyxy": [
+     0.4989,
+     0.8407,
+     0.5844,
+     0.8686
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.401,
+    "xyxy": [
+     0.1494,
+     0.7788,
+     0.2969,
+     0.8149
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.267,
+    "xyxy": [
+     0.7513,
+     0.3813,
+     0.8437,
+     0.9984
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.262,
+    "xyxy": [
+     0.041,
+     0.504,
+     0.8309,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125031_f017.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.504,
+    "xyxy": [
+     0.0,
+     0.7377,
+     0.9988,
+     1.0
+    ]
+   },
+   {
+    "prompt": "bicycle",
+    "classe": "obstaculo",
+    "conf": 0.455,
+    "xyxy": [
+     0.7848,
+     0.3422,
+     0.8446,
+     0.4176
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.396,
+    "xyxy": [
+     0.7243,
+     0.0003,
+     0.9351,
+     0.4257
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.282,
+    "xyxy": [
+     0.0,
+     0.4735,
+     1.0,
+     0.9999
+    ]
+   }
+  ],
+  "20261119_125031_f018.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.217,
+    "xyxy": [
+     0.8339,
+     0.0,
+     0.9237,
+     0.3884
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.151,
+    "xyxy": [
+     0.0,
+     0.417,
+     0.9984,
+     0.9994
+    ]
+   }
+  ],
+  "20261119_125031_f019.jpg": [],
+  "20261119_125031_f020.jpg": [],
+  "20261119_125031_f021.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.21,
+    "xyxy": [
+     0.0828,
+     0.7075,
+     0.4946,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125031_f022.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.66,
+    "xyxy": [
+     0.2295,
+     0.5689,
+     0.3478,
+     0.6347
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.16,
+    "xyxy": [
+     0.0848,
+     0.0,
+     0.3716,
+     0.492
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.156,
+    "xyxy": [
+     0.2537,
+     0.0007,
+     0.3713,
+     0.491
+    ]
+   }
+  ],
+  "20261119_125031_f023.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.725,
+    "xyxy": [
+     0.043,
+     0.8625,
+     0.207,
+     0.9169
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.533,
+    "xyxy": [
+     0.428,
+     0.5174,
+     0.5601,
+     0.5939
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.411,
+    "xyxy": [
+     0.1852,
+     0.7419,
+     0.3053,
+     0.773
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.408,
+    "xyxy": [
+     0.2257,
+     0.8018,
+     0.3657,
+     0.8447
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.266,
+    "xyxy": [
+     0.3386,
+     0.5431,
+     0.4352,
+     0.5726
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.163,
+    "xyxy": [
+     0.0014,
+     0.5894,
+     0.4681,
+     0.9996
+    ]
+   }
+  ],
+  "20261119_125031_f024.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.777,
+    "xyxy": [
+     0.1517,
+     0.8297,
+     0.317,
+     0.888
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.773,
+    "xyxy": [
+     0.3139,
+     0.6276,
+     0.5804,
+     0.6698
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.748,
+    "xyxy": [
+     0.174,
+     0.9503,
+     0.3909,
+     1.0
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.489,
+    "xyxy": [
+     0.5172,
+     0.4846,
+     0.6748,
+     0.5759
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.343,
+    "xyxy": [
+     0.0006,
+     0.3692,
+     0.9682,
+     0.9995
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.326,
+    "xyxy": [
+     0.4152,
+     0.5138,
+     0.5275,
+     0.5497
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.178,
+    "xyxy": [
+     0.4898,
+     0.4202,
+     0.5304,
+     0.45
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.169,
+    "xyxy": [
+     0.0045,
+     0.5593,
+     0.5726,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125031_f025.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.785,
+    "xyxy": [
+     0.3598,
+     0.5671,
+     0.5132,
+     0.6196
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.756,
+    "xyxy": [
+     0.2031,
+     0.7632,
+     0.6319,
+     0.8783
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.666,
+    "xyxy": [
+     0.4997,
+     0.532,
+     0.7144,
+     0.6609
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.45,
+    "xyxy": [
+     0.0,
+     0.3853,
+     0.9989,
+     0.9992
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.158,
+    "xyxy": [
+     0.4423,
+     0.4449,
+     0.4883,
+     0.4791
+    ]
+   }
+  ],
+  "20261119_125031_f026.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.748,
+    "xyxy": [
+     0.2658,
+     0.6995,
+     0.4979,
+     0.788
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.692,
+    "xyxy": [
+     0.4584,
+     0.6641,
+     0.7863,
+     0.8791
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.329,
+    "xyxy": [
+     0.4176,
+     0.51,
+     0.4714,
+     0.5552
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.186,
+    "xyxy": [
+     0.0001,
+     0.4262,
+     0.9928,
+     0.9975
+    ]
+   }
+  ],
+  "20261119_125031_f027.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.696,
+    "xyxy": [
+     0.0,
+     0.8666,
+     0.1742,
+     0.9998
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.447,
+    "xyxy": [
+     0.0024,
+     0.8471,
+     0.5365,
+     1.0
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.288,
+    "xyxy": [
+     0.3087,
+     0.5674,
+     0.377,
+     0.5987
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.241,
+    "xyxy": [
+     0.0011,
+     0.8667,
+     0.1739,
+     0.9333
+    ]
+   }
+  ],
+  "20261119_125031_f028.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.672,
+    "xyxy": [
+     0.4406,
+     0.5619,
+     0.5206,
+     0.6069
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.172,
+    "xyxy": [
+     0.0,
+     0.4778,
+     0.8672,
+     0.9978
+    ]
+   },
+   {
+    "prompt": "utility pole",
+    "classe": "obstaculo",
+    "conf": 0.152,
+    "xyxy": [
+     0.6811,
+     0.2012,
+     0.7217,
+     0.3015
+    ]
+   }
+  ],
+  "20261119_125031_f029.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.779,
+    "xyxy": [
+     0.109,
+     0.5642,
+     0.218,
+     0.6254
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.321,
+    "xyxy": [
+     0.0017,
+     0.4543,
+     0.8395,
+     1.0
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.181,
+    "xyxy": [
+     0.5899,
+     0.4155,
+     1.0,
+     0.9991
+    ]
+   }
+  ],
+  "20261119_125031_f030.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.158,
+    "xyxy": [
+     0.0,
+     0.508,
+     0.7175,
+     0.9993
+    ]
+   }
+  ],
+  "20261119_125031_f031.jpg": [],
+  "20261119_125031_f032.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.29,
+    "xyxy": [
+     0.0,
+     0.5041,
+     0.9515,
+     0.9999
+    ]
+   }
+  ],
+  "20261119_125031_f033.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.239,
+    "xyxy": [
+     0.0,
+     0.449,
+     0.8766,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125031_f034.jpg": [],
+  "20261119_125031_f035.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.242,
+    "xyxy": [
+     0.0,
+     0.3177,
+     1.0,
+     0.9819
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.156,
+    "xyxy": [
+     0.5098,
+     0.3064,
+     0.5477,
+     0.3205
+    ]
+   }
+  ],
+  "20261119_125031_f036.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.341,
+    "xyxy": [
+     0.3537,
+     0.3655,
+     0.5539,
+     0.4685
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.165,
+    "xyxy": [
+     0.4309,
+     0.2674,
+     0.4747,
+     0.2835
+    ]
+   }
+  ],
+  "20261119_125031_f037.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.293,
+    "xyxy": [
+     0.0,
+     0.6097,
+     0.9981,
+     1.0
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.236,
+    "xyxy": [
+     0.555,
+     0.0799,
+     0.6106,
+     0.1107
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.223,
+    "xyxy": [
+     0.4995,
+     0.4023,
+     0.7178,
+     0.5743
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.17,
+    "xyxy": [
+     0.5849,
+     0.2708,
+     0.6314,
+     0.2892
+    ]
+   }
+  ],
+  "20261119_125031_f038.jpg": [
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.54,
+    "xyxy": [
+     0.4641,
+     0.0902,
+     0.5253,
+     0.1233
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.183,
+    "xyxy": [
+     0.3917,
+     0.3169,
+     0.476,
+     0.341
+    ]
+   }
+  ],
+  "20261119_125031_f039.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.227,
+    "xyxy": [
+     0.0021,
+     0.7835,
+     0.1568,
+     0.8246
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.219,
+    "xyxy": [
+     0.0191,
+     0.2347,
+     0.9976,
+     0.8754
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.186,
+    "xyxy": [
+     0.5029,
+     0.0,
+     0.5703,
+     0.0354
+    ]
+   },
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.184,
+    "xyxy": [
+     0.7579,
+     0.1792,
+     0.7767,
+     0.1927
+    ]
+   }
+  ],
+  "20261119_125031_f040.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.216,
+    "xyxy": [
+     0.0019,
+     0.2714,
+     0.9991,
+     0.997
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.214,
+    "xyxy": [
+     0.726,
+     0.2062,
+     0.7456,
+     0.22
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.166,
+    "xyxy": [
+     0.5212,
+     0.2558,
+     0.5846,
+     0.281
+    ]
+   }
+  ],
+  "20261119_125031_f041.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.457,
+    "xyxy": [
+     0.1716,
+     0.4305,
+     0.3234,
+     0.4755
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.363,
+    "xyxy": [
+     0.6232,
+     0.3251,
+     0.6424,
+     0.3389
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.239,
+    "xyxy": [
+     0.3529,
+     0.1273,
+     0.4293,
+     0.158
+    ]
+   }
+  ],
+  "20261119_125031_f042.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.445,
+    "xyxy": [
+     0.0,
+     0.3957,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "rubble",
+    "classe": "obstaculo",
+    "conf": 0.218,
+    "xyxy": [
+     0.0571,
+     0.4649,
+     0.2708,
+     0.5361
+    ]
+   }
+  ],
+  "20261119_125031_f043.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.62,
+    "xyxy": [
+     0.0019,
+     0.5752,
+     0.3075,
+     0.7079
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.396,
+    "xyxy": [
+     0.0,
+     0.4195,
+     0.9936,
+     0.9971
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.353,
+    "xyxy": [
+     0.534,
+     0.445,
+     0.6557,
+     0.5066
+    ]
+   }
+  ],
+  "20261119_125031_f044.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.341,
+    "xyxy": [
+     0.3271,
+     0.529,
+     0.5012,
+     0.6167
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.27,
+    "xyxy": [
+     0.0004,
+     0.4608,
+     0.9078,
+     0.9995
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.177,
+    "xyxy": [
+     0.4784,
+     0.5546,
+     0.5206,
+     0.5947
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.165,
+    "xyxy": [
+     0.628,
+     0.5586,
+     0.79,
+     0.7113
+    ]
+   }
+  ],
+  "20261119_125031_f045.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.392,
+    "xyxy": [
+     0.2238,
+     0.6995,
+     0.309,
+     0.7718
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.223,
+    "xyxy": [
+     0.0006,
+     0.6631,
+     0.2777,
+     0.8292
+    ]
+   }
+  ],
+  "20261119_125031_f046.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.517,
+    "xyxy": [
+     0.1281,
+     0.4032,
+     0.1957,
+     0.4298
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.28,
+    "xyxy": [
+     0.0001,
+     0.4844,
+     0.615,
+     1.0
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.188,
+    "xyxy": [
+     0.0166,
+     0.9131,
+     0.3551,
+     1.0
+    ]
+   },
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.18,
+    "xyxy": [
+     0.4233,
+     0.3525,
+     0.4482,
+     0.3698
+    ]
+   }
+  ],
+  "20261119_125031_f047.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.483,
+    "xyxy": [
+     0.495,
+     0.3787,
+     0.5722,
+     0.409
+    ]
+   }
+  ],
+  "20261119_125031_f048.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.593,
+    "xyxy": [
+     0.1823,
+     0.403,
+     0.2813,
+     0.4418
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.432,
+    "xyxy": [
+     0.0018,
+     0.5479,
+     0.7465,
+     0.9995
+    ]
+   }
+  ],
+  "20261119_125031_f049.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.722,
+    "xyxy": [
+     0.2043,
+     0.4445,
+     0.3296,
+     0.4979
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.35,
+    "xyxy": [
+     0.0,
+     0.354,
+     0.9774,
+     1.0
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.29,
+    "xyxy": [
+     0.4697,
+     0.544,
+     0.5971,
+     0.58
+    ]
+   }
+  ],
+  "20261119_125031_f050.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.915,
+    "xyxy": [
+     0.001,
+     0.4594,
+     0.1295,
+     0.5406
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.285,
+    "xyxy": [
+     0.3208,
+     0.6418,
+     0.523,
+     0.715
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.172,
+    "xyxy": [
+     0.0007,
+     0.3168,
+     0.9747,
+     0.9989
+    ]
+   }
+  ],
+  "20261119_125031_f051.jpg": [
+   {
+    "prompt": "motorcycle",
+    "classe": "obstaculo",
+    "conf": 0.288,
+    "xyxy": [
+     0.9454,
+     0.138,
+     0.9678,
+     0.1587
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.187,
+    "xyxy": [
+     0.097,
+     0.9473,
+     0.5036,
+     1.0
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.168,
+    "xyxy": [
+     0.0,
+     0.0051,
+     0.601,
+     0.6591
+    ]
+   }
+  ],
+  "20261119_125031_f052.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.295,
+    "xyxy": [
+     0.0,
+     0.4205,
+     0.6369,
+     0.9994
+    ]
+   }
+  ],
+  "20261119_125031_f053.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.22,
+    "xyxy": [
+     0.0,
+     0.4144,
+     0.9997,
+     0.999
+    ]
+   }
+  ],
+  "20261119_125031_f054.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.346,
+    "xyxy": [
+     0.0,
+     0.4127,
+     1.0,
+     0.9937
+    ]
+   }
+  ],
+  "20261119_125031_f055.jpg": [
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.54,
+    "xyxy": [
+     0.7657,
+     0.3466,
+     0.8877,
+     0.4223
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.433,
+    "xyxy": [
+     0.0021,
+     0.4134,
+     0.9999,
+     0.9984
+    ]
+   }
+  ],
+  "20261119_125031_f056.jpg": [
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.508,
+    "xyxy": [
+     0.7215,
+     0.4686,
+     0.913,
+     0.5877
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.215,
+    "xyxy": [
+     0.0005,
+     0.2481,
+     1.0,
+     0.9769
+    ]
+   }
+  ],
+  "20261119_125031_f057.jpg": [
+   {
+    "prompt": "cardboard box",
+    "classe": "obstaculo",
+    "conf": 0.556,
+    "xyxy": [
+     0.7709,
+     0.6449,
+     1.0,
+     0.8739
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.285,
+    "xyxy": [
+     0.0,
+     0.344,
+     1.0,
+     0.9996
+    ]
+   }
+  ],
+  "20261119_125031_f058.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.183,
+    "xyxy": [
+     0.6842,
+     0.4821,
+     0.7655,
+     0.4972
+    ]
+   }
+  ],
+  "20261119_125031_f059.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.333,
+    "xyxy": [
+     0.0,
+     0.2112,
+     0.9999,
+     0.9077
+    ]
+   },
+   {
+    "prompt": "pothole",
+    "classe": "buraco",
+    "conf": 0.16,
+    "xyxy": [
+     0.7143,
+     0.3577,
+     0.8205,
+     0.377
+    ]
+   }
+  ],
+  "20261119_125031_f060.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.559,
+    "xyxy": [
+     0.3637,
+     0.0,
+     0.513,
+     0.4919
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.525,
+    "xyxy": [
+     0.0,
+     0.3547,
+     0.9978,
+     0.9992
+    ]
+   },
+   {
+    "prompt": "pothole",
+    "classe": "buraco",
+    "conf": 0.311,
+    "xyxy": [
+     0.7307,
+     0.5791,
+     0.901,
+     0.606
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.221,
+    "xyxy": [
+     0.5502,
+     0.263,
+     1.0,
+     0.9818
+    ]
+   }
+  ],
+  "20261119_125031_f061.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.733,
+    "xyxy": [
+     0.3926,
+     0.0003,
+     0.626,
+     0.5919
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.386,
+    "xyxy": [
+     0.0,
+     0.3705,
+     0.9966,
+     0.9999
+    ]
+   }
+  ],
+  "20261119_125031_f062.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.439,
+    "xyxy": [
+     0.0,
+     0.4272,
+     0.9153,
+     0.9999
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.264,
+    "xyxy": [
+     0.0523,
+     0.0042,
+     0.388,
+     0.77
+    ]
+   }
+  ],
+  "20261119_125031_f063.jpg": [
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.263,
+    "xyxy": [
+     0.2093,
+     0.4046,
+     0.2457,
+     0.4316
+    ]
+   }
+  ],
+  "20261119_125031_f064.jpg": [],
+  "20261119_125031_f065.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.386,
+    "xyxy": [
+     0.3881,
+     0.1092,
+     0.4777,
+     0.2911
+    ]
+   },
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.304,
+    "xyxy": [
+     0.4418,
+     0.1988,
+     0.4944,
+     0.236
+    ]
+   }
+  ],
+  "20261119_125031_f066.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.192,
+    "xyxy": [
+     0.4354,
+     0.261,
+     0.4792,
+     0.4541
+    ]
+   }
+  ],
+  "20261119_125031_f067.jpg": [
+   {
+    "prompt": "plant pot",
+    "classe": "obstaculo",
+    "conf": 0.319,
+    "xyxy": [
+     0.5345,
+     0.2023,
+     0.5658,
+     0.224
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.226,
+    "xyxy": [
+     0.5161,
+     0.184,
+     0.573,
+     0.4223
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.191,
+    "xyxy": [
+     0.0,
+     0.3696,
+     1.0,
+     0.9982
+    ]
+   }
+  ],
+  "20261119_125031_f068.jpg": [
+   {
+    "prompt": "trash can",
+    "classe": "obstaculo",
+    "conf": 0.366,
+    "xyxy": [
+     0.5303,
+     0.0902,
+     0.6131,
+     0.1443
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.331,
+    "xyxy": [
+     0.0,
+     0.337,
+     0.9956,
+     0.9984
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.166,
+    "xyxy": [
+     0.087,
+     0.0351,
+     1.0,
+     0.6522
+    ]
+   }
+  ],
+  "20261119_125213_f001.jpg": [],
+  "20261119_125213_f002.jpg": [],
+  "20261119_125213_f003.jpg": [],
+  "20261119_125213_f004.jpg": [],
+  "20261119_125213_f005.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.173,
+    "xyxy": [
+     0.0,
+     0.4636,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.173,
+    "xyxy": [
+     0.2583,
+     0.4029,
+     0.6656,
+     0.4665
+    ]
+   }
+  ],
+  "20261119_125213_f006.jpg": [],
+  "20261119_125213_f007.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.307,
+    "xyxy": [
+     0.439,
+     0.3639,
+     0.4794,
+     0.3887
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.266,
+    "xyxy": [
+     0.0,
+     0.497,
+     0.9989,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125213_f008.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.526,
+    "xyxy": [
+     0.4274,
+     0.4175,
+     0.4766,
+     0.449
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.2,
+    "xyxy": [
+     0.0,
+     0.6071,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.181,
+    "xyxy": [
+     0.3766,
+     0.0009,
+     0.4684,
+     0.4295
+    ]
+   }
+  ],
+  "20261119_125213_f009.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.576,
+    "xyxy": [
+     0.5482,
+     0.4444,
+     0.6096,
+     0.4789
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.291,
+    "xyxy": [
+     0.4796,
+     0.0002,
+     0.5924,
+     0.4599
+    ]
+   }
+  ],
+  "20261119_125213_f010.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.797,
+    "xyxy": [
+     0.6765,
+     0.4634,
+     0.7597,
+     0.5064
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.208,
+    "xyxy": [
+     0.0008,
+     0.4856,
+     0.0784,
+     0.5016
+    ]
+   }
+  ],
+  "20261119_125213_f011.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.75,
+    "xyxy": [
+     0.7028,
+     0.5051,
+     0.819,
+     0.5628
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.398,
+    "xyxy": [
+     0.6127,
+     0.0,
+     0.7243,
+     0.5087
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.202,
+    "xyxy": [
+     0.327,
+     0.9655,
+     0.6261,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125213_f012.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.612,
+    "xyxy": [
+     0.3699,
+     0.0001,
+     0.538,
+     0.5817
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.199,
+    "xyxy": [
+     0.0,
+     0.5155,
+     0.9945,
+     1.0
+    ]
+   },
+   {
+    "prompt": "rubble",
+    "classe": "obstaculo",
+    "conf": 0.196,
+    "xyxy": [
+     0.4276,
+     0.6791,
+     0.9801,
+     0.8163
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.178,
+    "xyxy": [
+     0.0011,
+     0.801,
+     0.9993,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125213_f013.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.656,
+    "xyxy": [
+     0.6353,
+     0.7622,
+     0.9194,
+     0.9134
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.533,
+    "xyxy": [
+     0.3596,
+     0.002,
+     0.545,
+     0.6697
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.206,
+    "xyxy": [
+     0.3462,
+     0.5766,
+     0.3846,
+     0.5891
+    ]
+   }
+  ],
+  "20261119_125213_f014.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.218,
+    "xyxy": [
+     0.094,
+     0.6507,
+     0.1452,
+     0.6655
+    ]
+   }
+  ],
+  "20261119_125213_f015.jpg": [],
+  "20261119_125213_f016.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.231,
+    "xyxy": [
+     0.3231,
+     0.4624,
+     0.6544,
+     0.929
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.173,
+    "xyxy": [
+     0.53,
+     0.4503,
+     0.7352,
+     0.5724
+    ]
+   }
+  ],
+  "20261119_125252_f001.jpg": [],
+  "20261119_125252_f002.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.186,
+    "xyxy": [
+     0.3533,
+     0.7172,
+     0.4145,
+     0.7425
+    ]
+   }
+  ],
+  "20261119_125252_f003.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.438,
+    "xyxy": [
+     0.2113,
+     0.354,
+     0.2796,
+     0.4039
+    ]
+   }
+  ],
+  "20261119_125252_f004.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.852,
+    "xyxy": [
+     0.0681,
+     0.4077,
+     0.2438,
+     0.4752
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.2,
+    "xyxy": [
+     0.2395,
+     0.0004,
+     0.299,
+     0.3462
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.159,
+    "xyxy": [
+     0.0043,
+     0.3375,
+     0.9981,
+     1.0
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.153,
+    "xyxy": [
+     0.5468,
+     0.0033,
+     0.6778,
+     0.5328
+    ]
+   }
+  ],
+  "20261119_125252_f005.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.687,
+    "xyxy": [
+     0.1705,
+     0.4594,
+     0.3888,
+     0.544
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.218,
+    "xyxy": [
+     0.4624,
+     0.0,
+     0.5288,
+     0.3657
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.155,
+    "xyxy": [
+     0.0076,
+     0.3557,
+     0.9772,
+     0.9987
+    ]
+   }
+  ],
+  "20261119_125252_f006.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.879,
+    "xyxy": [
+     0.1167,
+     0.536,
+     0.396,
+     0.6567
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.253,
+    "xyxy": [
+     0.0,
+     0.3565,
+     0.9929,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125252_f007.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.319,
+    "xyxy": [
+     0.0009,
+     0.7109,
+     0.2617,
+     0.9427
+    ]
+   }
+  ],
+  "20261119_125252_f008.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.173,
+    "xyxy": [
+     0.4986,
+     0.0,
+     0.567,
+     0.3941
+    ]
+   }
+  ],
+  "20261119_125252_f009.jpg": [],
+  "20261119_125252_f010.jpg": [],
+  "20261119_125252_f011.jpg": [],
+  "20261119_125252_f012.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.295,
+    "xyxy": [
+     0.6779,
+     0.3886,
+     0.7827,
+     0.4207
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.226,
+    "xyxy": [
+     0.0,
+     0.3713,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125252_f013.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.411,
+    "xyxy": [
+     0.7394,
+     0.4127,
+     0.8479,
+     0.4534
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.151,
+    "xyxy": [
+     0.3283,
+     0.0056,
+     0.41,
+     0.4611
+    ]
+   }
+  ],
+  "20261119_125252_f014.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.69,
+    "xyxy": [
+     0.7016,
+     0.4344,
+     0.838,
+     0.4868
+    ]
+   }
+  ],
+  "20261119_125252_f015.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.618,
+    "xyxy": [
+     0.8594,
+     0.4185,
+     0.9991,
+     0.4981
+    ]
+   }
+  ],
+  "20261119_125252_f016.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.222,
+    "xyxy": [
+     0.0,
+     0.4136,
+     0.9941,
+     1.0
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.221,
+    "xyxy": [
+     0.1309,
+     0.6791,
+     0.3267,
+     0.7311
+    ]
+   }
+  ],
+  "20261119_125252_f017.jpg": [],
+  "20261119_125252_f018.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.247,
+    "xyxy": [
+     0.0018,
+     0.55,
+     0.4299,
+     0.9084
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.237,
+    "xyxy": [
+     0.0018,
+     0.5501,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125252_f019.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.222,
+    "xyxy": [
+     0.7045,
+     0.7293,
+     0.9068,
+     0.7777
+    ]
+   }
+  ],
+  "20261119_125252_f020.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.162,
+    "xyxy": [
+     0.0034,
+     0.3428,
+     1.0,
+     0.9849
+    ]
+   }
+  ],
+  "20261119_125252_f021.jpg": [],
+  "20261119_125252_f022.jpg": [],
+  "20261119_125252_f023.jpg": [],
+  "20261119_125252_f024.jpg": [],
+  "20261119_125252_f025.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.412,
+    "xyxy": [
+     0.0024,
+     0.0001,
+     1.0,
+     0.6582
+    ]
+   },
+   {
+    "prompt": "rubble",
+    "classe": "obstaculo",
+    "conf": 0.31,
+    "xyxy": [
+     0.0,
+     0.2187,
+     1.0,
+     0.923
+    ]
+   }
+  ],
+  "20261119_125352_f001.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.681,
+    "xyxy": [
+     0.3018,
+     0.1337,
+     0.389,
+     0.2017
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.38,
+    "xyxy": [
+     0.49,
+     0.0876,
+     0.5355,
+     0.1184
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.283,
+    "xyxy": [
+     0.4462,
+     0.0943,
+     0.4792,
+     0.1155
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.169,
+    "xyxy": [
+     0.1503,
+     0.1301,
+     0.6648,
+     0.393
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.168,
+    "xyxy": [
+     0.0,
+     0.3846,
+     0.9985,
+     0.999
+    ]
+   }
+  ],
+  "20261119_125352_f002.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.59,
+    "xyxy": [
+     0.4688,
+     0.2901,
+     0.5635,
+     0.3585
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.298,
+    "xyxy": [
+     0.0031,
+     0.6144,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.237,
+    "xyxy": [
+     0.6243,
+     0.2531,
+     0.6574,
+     0.2721
+    ]
+   }
+  ],
+  "20261119_125352_f003.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.541,
+    "xyxy": [
+     0.4784,
+     0.3249,
+     0.5092,
+     0.3446
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.53,
+    "xyxy": [
+     0.3112,
+     0.3701,
+     0.4229,
+     0.4498
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.378,
+    "xyxy": [
+     0.0,
+     0.3615,
+     0.991,
+     0.9998
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.21,
+    "xyxy": [
+     0.5242,
+     0.3156,
+     0.5714,
+     0.3466
+    ]
+   }
+  ],
+  "20261119_125352_f004.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.615,
+    "xyxy": [
+     0.2542,
+     0.4193,
+     0.393,
+     0.5184
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.537,
+    "xyxy": [
+     0.4738,
+     0.3575,
+     0.5087,
+     0.3803
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.496,
+    "xyxy": [
+     0.0,
+     0.4056,
+     1.0,
+     0.9978
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.213,
+    "xyxy": [
+     0.5246,
+     0.3522,
+     0.5744,
+     0.3833
+    ]
+   }
+  ],
+  "20261119_125352_f005.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.831,
+    "xyxy": [
+     0.2298,
+     0.5148,
+     0.4127,
+     0.6469
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.4,
+    "xyxy": [
+     0.5623,
+     0.4031,
+     0.6186,
+     0.437
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.398,
+    "xyxy": [
+     0.0,
+     0.4636,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f006.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.893,
+    "xyxy": [
+     0.0653,
+     0.5732,
+     0.3365,
+     0.7767
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.274,
+    "xyxy": [
+     0.0005,
+     0.4345,
+     0.989,
+     1.0
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.262,
+    "xyxy": [
+     0.5601,
+     0.4035,
+     0.6212,
+     0.4403
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.222,
+    "xyxy": [
+     0.5025,
+     0.4104,
+     0.5379,
+     0.4373
+    ]
+   }
+  ],
+  "20261119_125352_f007.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.36,
+    "xyxy": [
+     0.438,
+     0.4118,
+     0.5062,
+     0.4525
+    ]
+   }
+  ],
+  "20261119_125352_f008.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.213,
+    "xyxy": [
+     0.407,
+     0.4431,
+     0.4477,
+     0.4614
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.201,
+    "xyxy": [
+     0.4783,
+     0.419,
+     0.5542,
+     0.4639
+    ]
+   }
+  ],
+  "20261119_125352_f009.jpg": [
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.174,
+    "xyxy": [
+     0.0,
+     0.3771,
+     1.0,
+     0.9995
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.169,
+    "xyxy": [
+     0.4919,
+     0.4617,
+     0.5373,
+     0.4801
+    ]
+   }
+  ],
+  "20261119_125352_f010.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.615,
+    "xyxy": [
+     0.7314,
+     0.4322,
+     0.837,
+     0.4965
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.181,
+    "xyxy": [
+     0.6368,
+     0.4731,
+     0.6925,
+     0.4948
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.175,
+    "xyxy": [
+     0.0,
+     0.638,
+     0.9546,
+     0.9997
+    ]
+   }
+  ],
+  "20261119_125352_f011.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.533,
+    "xyxy": [
+     0.7092,
+     0.4401,
+     0.8304,
+     0.5139
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.202,
+    "xyxy": [
+     0.0007,
+     0.7725,
+     0.9455,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f012.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.525,
+    "xyxy": [
+     0.7432,
+     0.4402,
+     0.8933,
+     0.5331
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.196,
+    "xyxy": [
+     0.609,
+     0.4697,
+     0.6907,
+     0.5129
+    ]
+   }
+  ],
+  "20261119_125352_f013.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.389,
+    "xyxy": [
+     0.7447,
+     0.4895,
+     0.9395,
+     0.6125
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.277,
+    "xyxy": [
+     0.0,
+     0.4637,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.19,
+    "xyxy": [
+     0.5773,
+     0.532,
+     0.6853,
+     0.5905
+    ]
+   },
+   {
+    "prompt": "construction barrier",
+    "classe": "obstaculo",
+    "conf": 0.155,
+    "xyxy": [
+     0.887,
+     0.3003,
+     0.9983,
+     0.3654
+    ]
+   }
+  ],
+  "20261119_125352_f014.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.734,
+    "xyxy": [
+     0.6652,
+     0.6034,
+     0.8266,
+     0.6986
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.663,
+    "xyxy": [
+     0.9057,
+     0.5544,
+     0.9988,
+     0.7265
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.445,
+    "xyxy": [
+     0.6797,
+     0.6792,
+     0.8296,
+     0.7486
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.228,
+    "xyxy": [
+     0.0045,
+     0.4932,
+     0.9991,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f015.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.353,
+    "xyxy": [
+     0.242,
+     0.787,
+     0.6137,
+     0.8555
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.238,
+    "xyxy": [
+     0.4828,
+     0.4071,
+     0.5228,
+     0.4192
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.195,
+    "xyxy": [
+     0.2426,
+     0.5306,
+     0.6107,
+     0.8567
+    ]
+   }
+  ],
+  "20261119_125352_f016.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.457,
+    "xyxy": [
+     0.2457,
+     0.5646,
+     0.9997,
+     0.9999
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.235,
+    "xyxy": [
+     0.4984,
+     0.4202,
+     0.5392,
+     0.4332
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.161,
+    "xyxy": [
+     0.4578,
+     0.4326,
+     0.8155,
+     0.5734
+    ]
+   }
+  ],
+  "20261119_125352_f017.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.289,
+    "xyxy": [
+     0.2093,
+     0.622,
+     1.0,
+     0.9999
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.25,
+    "xyxy": [
+     0.4103,
+     0.4353,
+     0.4525,
+     0.4494
+    ]
+   }
+  ],
+  "20261119_125352_f018.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.558,
+    "xyxy": [
+     0.0061,
+     0.687,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.255,
+    "xyxy": [
+     0.3839,
+     0.4307,
+     0.4253,
+     0.4458
+    ]
+   }
+  ],
+  "20261119_125352_f019.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.372,
+    "xyxy": [
+     0.0,
+     0.8561,
+     0.9974,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f020.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.229,
+    "xyxy": [
+     0.0,
+     0.4261,
+     0.9982,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f021.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.45,
+    "xyxy": [
+     0.3969,
+     0.3344,
+     0.4484,
+     0.3539
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.322,
+    "xyxy": [
+     0.0007,
+     0.3604,
+     0.9987,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f022.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.38,
+    "xyxy": [
+     0.0024,
+     0.3314,
+     0.9998,
+     0.9965
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.156,
+    "xyxy": [
+     0.4604,
+     0.3024,
+     0.5174,
+     0.3236
+    ]
+   }
+  ],
+  "20261119_125352_f023.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.308,
+    "xyxy": [
+     0.0008,
+     0.3299,
+     0.9995,
+     1.0
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.177,
+    "xyxy": [
+     0.481,
+     0.2989,
+     0.5444,
+     0.3228
+    ]
+   }
+  ],
+  "20261119_125352_f024.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.229,
+    "xyxy": [
+     0.4795,
+     0.3876,
+     0.5492,
+     0.4135
+    ]
+   }
+  ],
+  "20261119_125352_f025.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.252,
+    "xyxy": [
+     0.3288,
+     0.4169,
+     0.4064,
+     0.4458
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.232,
+    "xyxy": [
+     0.4117,
+     0.0044,
+     0.4962,
+     0.4624
+    ]
+   }
+  ],
+  "20261119_125352_f026.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.232,
+    "xyxy": [
+     0.0,
+     0.4736,
+     1.0,
+     0.9999
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.19,
+    "xyxy": [
+     0.352,
+     0.4495,
+     0.441,
+     0.4824
+    ]
+   }
+  ],
+  "20261119_125352_f027.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.548,
+    "xyxy": [
+     0.0066,
+     0.4919,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.204,
+    "xyxy": [
+     0.486,
+     0.4603,
+     0.5917,
+     0.5003
+    ]
+   }
+  ],
+  "20261119_125352_f028.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.572,
+    "xyxy": [
+     0.496,
+     0.4707,
+     0.6251,
+     0.5204
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.539,
+    "xyxy": [
+     0.0125,
+     0.5106,
+     0.9993,
+     1.0
+    ]
+   },
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.199,
+    "xyxy": [
+     0.6691,
+     0.0367,
+     0.7969,
+     0.5758
+    ]
+   }
+  ],
+  "20261119_125352_f029.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.686,
+    "xyxy": [
+     0.5262,
+     0.4291,
+     0.6925,
+     0.4943
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.285,
+    "xyxy": [
+     0.0034,
+     0.4587,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f030.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.869,
+    "xyxy": [
+     0.4404,
+     0.4759,
+     0.6668,
+     0.568
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.276,
+    "xyxy": [
+     0.2028,
+     0.7246,
+     0.9039,
+     0.7921
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.196,
+    "xyxy": [
+     0.0105,
+     0.5281,
+     0.9937,
+     0.9991
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.158,
+    "xyxy": [
+     0.2253,
+     0.5302,
+     0.8516,
+     0.7586
+    ]
+   }
+  ],
+  "20261119_125352_f031.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.963,
+    "xyxy": [
+     0.3054,
+     0.5876,
+     0.6509,
+     0.7464
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.318,
+    "xyxy": [
+     0.0069,
+     0.6391,
+     0.9999,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f032.jpg": [
+   {
+    "prompt": "pole",
+    "classe": "obstaculo",
+    "conf": 0.259,
+    "xyxy": [
+     0.3859,
+     0.0619,
+     0.5197,
+     0.4044
+    ]
+   }
+  ],
+  "20261119_125352_f033.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.28,
+    "xyxy": [
+     0.0,
+     0.3072,
+     0.988,
+     0.9446
+    ]
+   },
+   {
+    "prompt": "pothole",
+    "classe": "buraco",
+    "conf": 0.233,
+    "xyxy": [
+     0.6688,
+     0.4038,
+     0.8884,
+     0.4352
+    ]
+   },
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.153,
+    "xyxy": [
+     0.4518,
+     0.3691,
+     0.9993,
+     0.4963
+    ]
+   }
+  ],
+  "20261119_125352_f034.jpg": [
+   {
+    "prompt": "hole in the pavement",
+    "classe": "buraco",
+    "conf": 0.373,
+    "xyxy": [
+     0.6115,
+     0.6548,
+     0.7746,
+     0.7025
+    ]
+   },
+   {
+    "prompt": "uneven sidewalk",
+    "classe": "desnivel",
+    "conf": 0.323,
+    "xyxy": [
+     0.0,
+     0.3514,
+     0.9996,
+     0.9996
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.161,
+    "xyxy": [
+     0.0265,
+     0.2539,
+     0.5818,
+     0.3104
+    ]
+   }
+  ],
+  "20261119_125352_f035.jpg": [
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.266,
+    "xyxy": [
+     0.0019,
+     0.3741,
+     1.0,
+     0.9988
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.18,
+    "xyxy": [
+     0.4297,
+     0.2838,
+     0.4849,
+     0.3045
+    ]
+   }
+  ],
+  "20261119_125352_f036.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.234,
+    "xyxy": [
+     0.2932,
+     0.2975,
+     0.3546,
+     0.3207
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.173,
+    "xyxy": [
+     0.308,
+     0.2631,
+     0.3587,
+     0.2855
+    ]
+   }
+  ],
+  "20261119_125352_f037.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.281,
+    "xyxy": [
+     0.4369,
+     0.3063,
+     0.5031,
+     0.332
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.166,
+    "xyxy": [
+     0.0021,
+     0.4613,
+     0.9996,
+     0.9346
+    ]
+   }
+  ],
+  "20261119_125352_f038.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.398,
+    "xyxy": [
+     0.1978,
+     0.3307,
+     0.4616,
+     0.4729
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.367,
+    "xyxy": [
+     0.0,
+     0.5643,
+     0.9998,
+     1.0
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.285,
+    "xyxy": [
+     0.3739,
+     0.3021,
+     0.4479,
+     0.3307
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.165,
+    "xyxy": [
+     0.1749,
+     0.3018,
+     0.9972,
+     0.5361
+    ]
+   }
+  ],
+  "20261119_125352_f039.jpg": [
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.407,
+    "xyxy": [
+     0.3894,
+     0.7833,
+     1.0,
+     0.9997
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.393,
+    "xyxy": [
+     0.4611,
+     0.3096,
+     0.5478,
+     0.3434
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.264,
+    "xyxy": [
+     0.0006,
+     0.7043,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.179,
+    "xyxy": [
+     0.5161,
+     0.2519,
+     0.5841,
+     0.2799
+    ]
+   },
+   {
+    "prompt": "raised paving stone",
+    "classe": "desnivel",
+    "conf": 0.157,
+    "xyxy": [
+     0.0423,
+     0.2695,
+     0.9996,
+     0.7233
+    ]
+   }
+  ],
+  "20261119_125352_f040.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.55,
+    "xyxy": [
+     0.4146,
+     0.3418,
+     0.5218,
+     0.3829
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.184,
+    "xyxy": [
+     0.4844,
+     0.2682,
+     0.5619,
+     0.2987
+    ]
+   }
+  ],
+  "20261119_125352_f041.jpg": [
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.508,
+    "xyxy": [
+     0.3942,
+     0.4159,
+     0.5165,
+     0.4653
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.244,
+    "xyxy": [
+     0.4565,
+     0.3072,
+     0.5388,
+     0.3391
+    ]
+   }
+  ],
+  "20261119_125352_f042.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.51,
+    "xyxy": [
+     0.3376,
+     0.4671,
+     0.4884,
+     0.5312
+    ]
+   }
+  ],
+  "20261119_125352_f043.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.691,
+    "xyxy": [
+     0.1242,
+     0.5544,
+     0.3563,
+     0.6516
+    ]
+   },
+   {
+    "prompt": "garbage bag",
+    "classe": "obstaculo",
+    "conf": 0.263,
+    "xyxy": [
+     0.3038,
+     0.3194,
+     0.3632,
+     0.3598
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.245,
+    "xyxy": [
+     0.0996,
+     0.5221,
+     0.2454,
+     0.6347
+    ]
+   },
+   {
+    "prompt": "broken pavement",
+    "classe": "desnivel",
+    "conf": 0.222,
+    "xyxy": [
+     0.0014,
+     0.37,
+     0.999,
+     1.0
+    ]
+   }
+  ],
+  "20261119_125352_f044.jpg": [
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.592,
+    "xyxy": [
+     0.0002,
+     0.7805,
+     0.205,
+     0.985
+    ]
+   },
+   {
+    "prompt": "trash bag",
+    "classe": "obstaculo",
+    "conf": 0.174,
+    "xyxy": [
+     0.2751,
+     0.3223,
+     0.3461,
+     0.3708
+    ]
+   }
+  ]
+ }
+}

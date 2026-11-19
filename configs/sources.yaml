@@ -102,3 +102,23 @@ sources:
     metadata_csv: data/raw/mapillary_br_v2/metadata.csv
     keep_empty: 0.15
     tags: [calcada, br]
+
+  videos_calcada:
+    enabled: true
+    path: data/raw/videos_calcada_sel
+    format: yolo
+    license: "própria (gravado pela equipe em 19/11/2026)"
+    url: ""
+    class_map:
+      buraco: buraco
+      desnivel: desnivel
+      obstaculo: obstaculo
+    group: regex
+    group_regex: '^(\d+_\d+)_f\d+$'     # um grupo por vídeo: quadros do mesmo vídeo nunca se dividem
+    split_groups:                        # divisão fixa por vídeo (vídeos inteiros, sem vazamento)
+      test: ["20261119_124457", "20261119_124907", "20261119_125352"]   # 72 quadros, sol e sombra
+      val: ["20261119_124322"]
+    default_split: train                 # os outros 9 vídeos
+    oversample: 4                        # quadros de treino repetidos 4x (domínio-alvo pesa mais)
+    keep_empty: 1.0
+    tags: [calcada, br, video]

@@ -1,0 +1,62 @@
+{
+  "proporcoes_alvo": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "limiar_dhash": 6,
+  "uniões_por_quase_duplicata": 5,
+  "imagens_test_br": 72,
+  "splits": {
+    "train": {
+      "imagens": 1486,
+      "grupos": 1390,
+      "caixas_por_classe": {
+        "buraco": 1216,
+        "desnivel": 72,
+        "obstaculo": 2635
+      },
+      "imagens_por_fonte": {
+        "pothole_chitholian": 465,
+        "sidewalk_walkability": 36,
+        "sidewalk_obstacles_blindspot": 883,
+        "videos_calcada": 102
+      }
+    },
+    "val": {
+      "imagens": 306,
+      "grupos": 296,
+      "caixas_por_classe": {
+        "buraco": 262,
+        "desnivel": 12,
+        "obstaculo": 550
+      },
+      "imagens_por_fonte": {
+        "pothole_chitholian": 100,
+        "sidewalk_walkability": 7,
+        "sidewalk_obstacles_blindspot": 189,
+        "videos_calcada": 10
+      }
+    },
+    "test": {
+      "imagens": 368,
+      "grupos": 298,
+      "caixas_por_classe": {
+        "buraco": 262,
+        "desnivel": 40,
+        "obstaculo": 648
+      },
+      "imagens_por_fonte": {
+        "pothole_chitholian": 100,
+        "sidewalk_walkability": 7,
+        "sidewalk_obstacles_blindspot": 189,
+        "videos_calcada": 72
+      }
+    }
+  },
+  "grupos_em_mais_de_um_split": 0,
+  "maior_grupo": {
+    "id": "videos_calcada::20261119_125352",
+    "imagens": 44
+  }
+}

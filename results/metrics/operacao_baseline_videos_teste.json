@@ -1,0 +1,42 @@
+{
+  "modelo": "baseline_publico.pt",
+  "conf": 0.35,
+  "iou": 0.5,
+  "imagens": 72,
+  "quadros_com_algum_falso_alarme": 21,
+  "por_classe": [
+    {
+      "classe": "buraco",
+      "TP": 0,
+      "FP": 5,
+      "FN": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "quadros_com_a_classe": 0,
+      "quadros_em_que_foi_detectada": 0
+    },
+    {
+      "classe": "desnivel",
+      "TP": 0,
+      "FP": 0,
+      "FN": 32,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "quadros_com_a_classe": 31,
+      "quadros_em_que_foi_detectada": 0
+    },
+    {
+      "classe": "obstaculo",
+      "TP": 26,
+      "FP": 18,
+      "FN": 83,
+      "precision": 0.591,
+      "recall": 0.239,
+      "f1": 0.34,
+      "quadros_com_a_classe": 66,
+      "quadros_em_que_foi_detectada": 40
+    }
+  ]
+}

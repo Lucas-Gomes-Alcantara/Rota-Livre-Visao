@@ -1,0 +1,138 @@
+{
+  "tag": "baseline_videos_teste",
+  "modelo": "baseline_publico.pt",
+  "dados": "configs\\data_test_br.yaml",
+  "split": "test",
+  "imagens": 72,
+  "instancias": 141,
+  "por_classe": [
+    {
+      "classe": "desnivel",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "map50": 0.008525296442687747,
+      "map50_95": 0.0034852569169960476
+    },
+    {
+      "classe": "obstaculo",
+      "precision": 0.4285887269938869,
+      "recall": 0.3486238532110092,
+      "f1": 0.3844926272501137,
+      "map50": 0.2799488651312022,
+      "map50_95": 0.09762935603899867
+    }
+  ],
+  "classes_sem_instancias_no_split": [
+    "buraco"
+  ],
+  "geral": {
+    "classe": "**Geral (média)**",
+    "precision": 0.21429436349694345,
+    "recall": 0.1743119266055046,
+    "f1": 0.19224631362505684,
+    "map50": 0.14423708078694497,
+    "map50_95": 0.050557306477997346
+  },
+  "tempo_ultralytics_ms": {
+    "preprocess": 0.6989680556317682,
+    "inference": 8.090347222201267,
+    "loss": 0.0003569443833839614,
+    "postprocess": 0.8363430556023054
+  },
+  "dispositivo_validacao": "GPU",
+  "latencia_ponta_a_ponta": [
+    {
+      "dispositivo": "GPU NVIDIA GeForce RTX 4050 Laptop GPU",
+      "imagens_medidas": 50,
+      "media_ms": 16.0,
+      "mediana_ms": 15.8,
+      "p95_ms": 17.0,
+      "fps_aprox": 62.4
+    }
+  ],
+  "matriz_confusao": {
+    "rotulos": [
+      "buraco",
+      "desnivel",
+      "obstaculo",
+      "fundo"
+    ],
+    "linhas_previsto_colunas_real": [
+      [
+        0,
+        2,
+        2,
+        564
+      ],
+      [
+        0,
+        4,
+        2,
+        239
+      ],
+      [
+        0,
+        0,
+        66,
+        785
+      ],
+      [
+        0,
+        26,
+        39,
+        0
+      ]
+    ]
+  },
+  "erros_mais_frequentes": [
+    {
+      "real": "fundo",
+      "previsto": "obstaculo",
+      "quantidade": 785,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "fundo",
+      "previsto": "buraco",
+      "quantidade": 564,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "fundo",
+      "previsto": "desnivel",
+      "quantidade": 239,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "obstaculo",
+      "previsto": "fundo",
+      "quantidade": 39,
+      "tipo": "falso negativo (não detectou)"
+    },
+    {
+      "real": "desnivel",
+      "previsto": "fundo",
+      "quantidade": 26,
+      "tipo": "falso negativo (não detectou)"
+    },
+    {
+      "real": "desnivel",
+      "previsto": "buraco",
+      "quantidade": 2,
+      "tipo": "confusão entre classes"
+    },
+    {
+      "real": "obstaculo",
+      "previsto": "buraco",
+      "quantidade": 2,
+      "tipo": "confusão entre classes"
+    },
+    {
+      "real": "obstaculo",
+      "previsto": "desnivel",
+      "quantidade": 2,
+      "tipo": "confusão entre classes"
+    }
+  ]
+}

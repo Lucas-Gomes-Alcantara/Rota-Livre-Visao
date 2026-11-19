@@ -1,0 +1,144 @@
+{
+  "tag": "baseline_test",
+  "modelo": "baseline_publico.pt",
+  "dados": "D:\\Projects\\rota-livre-visao\\configs\\data.yaml",
+  "split": "test",
+  "imagens": 368,
+  "instancias": 950,
+  "por_classe": [
+    {
+      "classe": "buraco",
+      "precision": 0.6764521083191964,
+      "recall": 0.7290076335877863,
+      "f1": 0.7017472447160049,
+      "map50": 0.7688334933582117,
+      "map50_95": 0.489655756414034
+    },
+    {
+      "classe": "desnivel",
+      "precision": 0.5117425200221472,
+      "recall": 0.1,
+      "f1": 0.16730650666676575,
+      "map50": 0.07151670332406143,
+      "map50_95": 0.034551097292641345
+    },
+    {
+      "classe": "obstaculo",
+      "precision": 0.8225741019274904,
+      "recall": 0.6481481481481481,
+      "f1": 0.7250177670889378,
+      "map50": 0.7317032451784738,
+      "map50_95": 0.4994953476990368
+    }
+  ],
+  "classes_sem_instancias_no_split": [],
+  "geral": {
+    "classe": "**Geral (média)**",
+    "precision": 0.6702562434229447,
+    "recall": 0.4923852605786448,
+    "f1": 0.5677146290346418,
+    "map50": 0.5240178139535824,
+    "map50_95": 0.34123406713523735
+  },
+  "tempo_ultralytics_ms": {
+    "preprocess": 0.7779078804481326,
+    "inference": 11.61140217391221,
+    "loss": 0.0003790760867717757,
+    "postprocess": 0.8034978260955382
+  },
+  "dispositivo_validacao": "GPU",
+  "latencia_ponta_a_ponta": [
+    {
+      "dispositivo": "GPU NVIDIA GeForce RTX 4050 Laptop GPU",
+      "imagens_medidas": 50,
+      "media_ms": 21.6,
+      "mediana_ms": 20.1,
+      "p95_ms": 45.3,
+      "fps_aprox": 46.2
+    }
+  ],
+  "matriz_confusao": {
+    "rotulos": [
+      "buraco",
+      "desnivel",
+      "obstaculo",
+      "fundo"
+    ],
+    "linhas_previsto_colunas_real": [
+      [
+        252,
+        2,
+        2,
+        3651
+      ],
+      [
+        0,
+        11,
+        3,
+        897
+      ],
+      [
+        0,
+        0,
+        557,
+        5663
+      ],
+      [
+        10,
+        27,
+        86,
+        0
+      ]
+    ]
+  },
+  "erros_mais_frequentes": [
+    {
+      "real": "fundo",
+      "previsto": "obstaculo",
+      "quantidade": 5663,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "fundo",
+      "previsto": "buraco",
+      "quantidade": 3651,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "fundo",
+      "previsto": "desnivel",
+      "quantidade": 897,
+      "tipo": "falso positivo (detectou onde não havia nada)"
+    },
+    {
+      "real": "obstaculo",
+      "previsto": "fundo",
+      "quantidade": 86,
+      "tipo": "falso negativo (não detectou)"
+    },
+    {
+      "real": "desnivel",
+      "previsto": "fundo",
+      "quantidade": 27,
+      "tipo": "falso negativo (não detectou)"
+    },
+    {
+      "real": "buraco",
+      "previsto": "fundo",
+      "quantidade": 10,
+      "tipo": "falso negativo (não detectou)"
+    },
+    {
+      "real": "obstaculo",
+      "previsto": "desnivel",
+      "quantidade": 3,
+      "tipo": "confusão entre classes"
+    },
+    {
+      "real": "desnivel",
+      "previsto": "buraco",
+      "quantidade": 2,
+      "tipo": "confusão entre classes"
+    }
+  ]
+}

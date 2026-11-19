@@ -155,10 +155,15 @@ def main():
     for r, g in zip(rows, final_group):
         vec[g] += np.array([1] + [int(r[f"n_{c}"]) for c in classes], dtype=float)
         source_of.setdefault(g, r["source"])
+    forced = {}
+    for r, g in zip(rows, final_group):
+        if r.get("forced_split"):
+            forced[g] = r["forced_split"]
     by_source = defaultdict(dict)
     for g, v in vec.items():
-        by_source[source_of[g]][g] = v
-    assign = {}
+        if g not in forced:
+            by_source[source_of[g]][g] = v
+    assign = dict(forced)
     for src, groups in by_source.items():
         assign.update(stratified_group_split(groups, args.ratios, args.seed))
 
@@ -174,6 +179,11 @@ def main():
         dst_img = out / s / "images" / img.name
         place(img, dst_img, args.mode)
         place(lbl, out / s / "labels" / lbl.name, args.mode)
+        # superamostragem (só no treino): cópias com outro nome, mesmo split -> sem vazamento
+        if s == "train":
+            for k in range(2, int(r.get("oversample") or 1) + 1):
+                place(img, out / s / "images" / f"{img.stem}_rep{k}{img.suffix}", args.mode)
+                place(lbl, out / s / "labels" / f"{lbl.stem}_rep{k}.txt", args.mode)
         if s == "test" and "br" in r.get("tags", "").split(","):
             test_br.append(str(dst_img.resolve()))
     write_manifest(out / "split_manifest.csv", rows)

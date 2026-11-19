@@ -1,0 +1,5 @@
+previsto\real,buraco,desnivel,obstaculo,fundo
+buraco,0,0,0,42
+desnivel,0,12,0,185
+obstaculo,0,0,95,629
+fundo,0,20,14,0

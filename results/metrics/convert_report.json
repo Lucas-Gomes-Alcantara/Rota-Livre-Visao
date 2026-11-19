@@ -1,0 +1,103 @@
+{
+  "pothole_chitholian": {
+    "estatisticas": {
+      "imagens_lidas": 665,
+      "imagens_aproveitadas": 665,
+      "imagens_vazias_mantidas": 0
+    },
+    "caixas_por_classe_original": {
+      "pothole": 1739
+    },
+    "classes_sem_mapeamento": {},
+    "caixas_por_classe_rota_livre": {
+      "buraco": 1739,
+      "desnivel": 0,
+      "obstaculo": 0
+    },
+    "grupos": 665
+  },
+  "sidewalk_walkability": {
+    "estatisticas": {
+      "imagens_lidas": 50,
+      "imagens_aproveitadas": 50,
+      "imagens_vazias_mantidas": 0
+    },
+    "caixas_por_classe_original": {
+      "broken": 52,
+      "obstruction": 18
+    },
+    "classes_sem_mapeamento": {},
+    "caixas_por_classe_rota_livre": {
+      "buraco": 0,
+      "desnivel": 52,
+      "obstaculo": 18
+    },
+    "grupos": 50
+  },
+  "sidewalk_obstacles_blindspot": {
+    "estatisticas": {
+      "imagens_lidas": 3730,
+      "caixas_descartadas_por_classe": 15845,
+      "imagens_aproveitadas": 1261,
+      "imagens_vazias_mantidas": 0
+    },
+    "caixas_por_classe_original": {
+      "truck": 750,
+      "motorbike": 443,
+      "person": 3752,
+      "car": 2894,
+      "dog": 166,
+      "pole": 1014,
+      "reflective_cone": 698,
+      "000000006016": 49,
+      "000000001589": 922,
+      "stop_sign": 278,
+      "fire_hydrant": 202,
+      "000000008204": 48,
+      "000000002782": 1092,
+      "000000002687": 160,
+      "000000005967": 304,
+      "000000005336": 589,
+      "bus": 453,
+      "bicycle": 633,
+      "warning_column": 737,
+      "000000000540": 64,
+      "000000002621": 60,
+      "000000002258": 85,
+      "spherical_roadblock": 482,
+      "000000005669": 685,
+      "ashcan": 436,
+      "000000005326": 747,
+      "000000004968": 159,
+      "tricycle": 314,
+      "000000005620": 773,
+      "000000007726": 425
+    },
+    "classes_sem_mapeamento": {},
+    "caixas_por_classe_rota_livre": {
+      "buraco": 0,
+      "desnivel": 0,
+      "obstaculo": 3569
+    },
+    "grupos": 1261
+  },
+  "videos_calcada": {
+    "estatisticas": {
+      "imagens_lidas": 184,
+      "imagens_aproveitadas": 184,
+      "imagens_vazias_mantidas": 14
+    },
+    "caixas_por_classe_original": {
+      "obstaculo": 246,
+      "desnivel": 72,
+      "buraco": 1
+    },
+    "classes_sem_mapeamento": {},
+    "caixas_por_classe_rota_livre": {
+      "buraco": 1,
+      "desnivel": 72,
+      "obstaculo": 246
+    },
+    "grupos": 13
+  }
+}
