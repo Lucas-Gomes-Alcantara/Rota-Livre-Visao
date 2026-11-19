@@ -2,6 +2,10 @@
 
 Atividade **Applied Computer Vision (FIAP)** do projeto Rota Livre.
 
+**▶ Vídeo de demonstração:** https://youtu.be/zDZmD35m8LE · **Relatório:** [`docs/Rota_Livre_Relatorio.pdf`](docs/Rota_Livre_Relatorio.pdf)
+
+**Integrantes:** Lucas Gomes Alcântara (RM98766) · Gabriel Gomes Catanzaro (RM93445) · Henrique Canali Cuzato (RM551326)
+
 Ferramenta que analisa vídeo em primeira pessoa da calçada, **detecta buracos, desníveis e obstáculos**
 que podem causar queda de pessoas com mobilidade reduzida ou deficiência visual (parcial ou total) e
 **avisa por voz e na tela** quando a barreira está no caminho à frente.
@@ -41,7 +45,7 @@ Arquivos em `results/metrics/` (gerados por `src/evaluate.py` e `src/operating_p
 
 - `operacao_videos_teste.md` — acertos, falsos alarmes e perdidos no limiar real do alerta
 
-Demonstrações (vídeos de teste, com voz): `results/demo/<video>_alerta.mp4` e a linha do tempo dos
+Demonstrações (vídeos de teste, com voz) — veja o [vídeo de demonstração](https://youtu.be/zDZmD35m8LE) ou os arquivos: `results/demo/<video>_alerta.mp4` e a linha do tempo dos
 avisos em `results/demo/<video>_eventos.csv`. Modelo treinado: `models/final.pt`.
 
 ## Reproduzir (Windows/Linux, GPU NVIDIA recomendada)
